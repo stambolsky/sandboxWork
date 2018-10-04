@@ -3,15 +3,18 @@ package ru.ql.tt.appmanager;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.BrowserType;
+import org.openqa.selenium.support.Color;
 
+import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
-    private WebDriver wd;
+    public WebDriver wd;
     private String browser;
 
 
@@ -64,5 +67,24 @@ public class ApplicationManager {
         return name;
     }
 
+    public boolean UserPhotoAboveResume() {
+        boolean res = true;
+        int firstElement = wd.findElement(By.xpath("//img[contains(@class,'avatar')]")).getLocation().getX();
+        int secondElement = wd.findElement(By.xpath("//div[@class='m-portlet__body']//div[@class='m-portlet'][1]")).getLocation().getY();
+        if (firstElement - secondElement > 0) {
+            res = false;
+        }
+        return res;
+    }
+
+    public boolean checkColorButtonCreateResume() {
+        boolean res = true;
+        String color = wd.findElement(By.xpath("//a[contains(text(), 'Сформировать резюме')]")).getCssValue("background-color");
+        String hex = Color.fromString(color).asHex();
+        if (!hex.equals("#716aca")) {
+            res = false;
+        }
+        return res;
+    }
 }
 
