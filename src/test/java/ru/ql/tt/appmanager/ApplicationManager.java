@@ -11,7 +11,12 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.Color;
 
 import java.awt.*;
+import java.util.Collection;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
+
+import static junit.framework.TestCase.assertTrue;
 
 public class ApplicationManager {
     public WebDriver wd;
@@ -28,7 +33,7 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.CHROME)) {
             wd = new ChromeDriver();
         }
-        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
     public void init() {
@@ -85,6 +90,42 @@ public class ApplicationManager {
             res = false;
         }
         return res;
+    }
+
+
+
+
+    public boolean allElementsBlock() {
+        String menu = "//div[contains(@class,'m-portlet__head m-stack m-stack--ver m-stack--general')]";
+        String logo = "//div[@class='m-portlet']//div[@class='avatarCover']";
+        String menuBlock = "//div[contains(@class,'m-stack__item m-stack__item--left m-stack--ver m-stack__item--middle m-stack__item--fluid')]";
+        String titleProfile = "//div[contains(@class,'m-subheader')]";
+        String resume = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][1]";
+        String scheduleWork = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][2]";
+        String contacts = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][3]";
+        String devices = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][4]";
+        String[] elements = {menu, logo, menuBlock, titleProfile, resume, scheduleWork, contacts,devices};
+        return allElementInBlock(elements);
+    }
+
+
+
+    private boolean allElementInBlock(String[] elements) {
+        return listElements(elements).size() == elements.length;
+    }
+
+    private Collection listElements(String[] elements) {
+        List<String> listOfElements = new LinkedList<String>();
+        for (String element : elements) {
+            try {
+                if (wd.findElement(By.xpath(element)).isDisplayed()) {
+                    listOfElements.add(element);
+                }
+            } catch (Exception e) {
+                System.out.println("Element is not displayed:" + element);
+            }
+        }
+        return listOfElements;
     }
 }
 
