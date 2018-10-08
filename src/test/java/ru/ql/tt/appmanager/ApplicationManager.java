@@ -1,22 +1,22 @@
 package ru.ql.tt.appmanager;
 
-import org.junit.Assert;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.Color;
+import org.testng.Assert;
 
-import java.awt.*;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import static junit.framework.TestCase.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class ApplicationManager {
     public WebDriver wd;
@@ -33,7 +33,7 @@ public class ApplicationManager {
         } else if (browser.equals(BrowserType.CHROME)) {
             wd = new ChromeDriver();
         }
-        wd.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+        wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
     public void init() {
@@ -108,8 +108,6 @@ public class ApplicationManager {
         return allElementInBlock(elements);
     }
 
-
-
     private boolean allElementInBlock(String[] elements) {
         return listElements(elements).size() == elements.length;
     }
@@ -127,5 +125,7 @@ public class ApplicationManager {
         }
         return listOfElements;
     }
+
+
 }
 
