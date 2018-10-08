@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,13 +35,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="2" />
-          <entry key="java" value="5386" />
+          <entry key="java" value="6352" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5386" />
+          <entry key="JAVA" value="6352" />
           <entry key="PLAIN_TEXT" value="2" />
           <entry key="XML" value="22" />
         </counts>
@@ -49,7 +50,7 @@
         <counts>
           <entry key="class" value="6" />
           <entry key="iml" value="2" />
-          <entry key="java" value="9" />
+          <entry key="java" value="13" />
           <entry key="xml" value="1" />
         </counts>
       </usages-collector>
@@ -57,7 +58,7 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="13" />
           <entry key="XML" value="1" />
         </counts>
       </usages-collector>
@@ -65,11 +66,59 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+            <state relative-caret-position="276">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1005">
+              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -155,7 +204,11 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" />
       </list>
     </option>
   </component>
@@ -196,7 +249,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="721" />
-    <option name="y" value="81" />
+    <option name="y" value="80" />
     <option name="width" value="1199" />
     <option name="height" value="872" />
   </component>
@@ -269,7 +322,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538990313767" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539011732538" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -295,7 +348,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest.testOpeningWindowResume">
+  <component name="RunManager" selected="TestNG.LoginTest">
     <configuration name="LoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
@@ -312,7 +365,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testOpeningWindowAddDevice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileAddDeviceTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -321,16 +374,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testOpeningWindowAddDevice" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileAddDeviceTests" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testOpeningWindowContacts" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileContactTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -339,16 +390,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testOpeningWindowContacts" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileContactTests" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testOpeningWindowResume" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileResumeTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -357,16 +406,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testOpeningWindowResume" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileResumeTests" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testOpeningWindowScheduleWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileScheduleWorkTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -375,9 +422,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.LoginTest" />
-      <option name="METHOD_NAME" value="testOpeningWindowScheduleWork" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileScheduleWorkTests" />
       <properties />
       <listeners />
       <method v="2">
@@ -385,19 +430,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.LoginTest.testOpeningWindowResume" />
       <item itemvalue="TestNG.LoginTest" />
-      <item itemvalue="TestNG.LoginTest.testOpeningWindowScheduleWork" />
-      <item itemvalue="TestNG.LoginTest.testOpeningWindowContacts" />
-      <item itemvalue="TestNG.LoginTest.testOpeningWindowAddDevice" />
+      <item itemvalue="TestNG.ProfileContactTests" />
+      <item itemvalue="TestNG.ProfileResumeTests" />
+      <item itemvalue="TestNG.ProfileAddDeviceTests" />
+      <item itemvalue="TestNG.ProfileScheduleWorkTests" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest.testOpeningWindowResume" />
         <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.LoginTest.testOpeningWindowContacts" />
-        <item itemvalue="TestNG.LoginTest.testOpeningWindowScheduleWork" />
-        <item itemvalue="TestNG.LoginTest.testOpeningWindowAddDevice" />
+        <item itemvalue="TestNG.ProfileScheduleWorkTests" />
+        <item itemvalue="TestNG.ProfileAddDeviceTests" />
+        <item itemvalue="TestNG.ProfileResumeTests" />
+        <item itemvalue="TestNG.ProfileContactTests" />
       </list>
     </recent_temporary>
   </component>
@@ -414,47 +459,47 @@
       <workItem from="1538572926952" duration="31673000" />
       <workItem from="1538929377019" duration="7882000" />
       <workItem from="1538937885973" duration="1351000" />
-      <workItem from="1538982821449" duration="2928000" />
+      <workItem from="1538982821449" duration="12966000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LoginTest - 2018.10.08 at 10h 38m 05s.xml">
+    <history-entry file="LoginTest - 2018.10.08 at 17h 46m 18s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest - 2018.10.08 at 10h 39m 17s.xml">
+    <history-entry file="LoginTest - 2018.10.08 at 17h 48m 07s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest - 2018.10.08 at 10h 42m 46s.xml">
+    <history-entry file="LoginTest - 2018.10.08 at 17h 49m 44s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest - 2018.10.08 at 10h 44m 06s.xml">
+    <history-entry file="LoginTest - 2018.10.08 at 17h 52m 02s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest - 2018.10.08 at 10h 45m 28s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
+    <history-entry file="ProfileContactTests - 2018.10.08 at 18h 03m 04s.xml">
+      <configuration name="ProfileContactTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testOpeningWindowResume - 2018.10.08 at 10h 46m 55s.xml">
-      <configuration name="LoginTest.testOpeningWindowResume" configurationId="TestNG" />
+    <history-entry file="ProfileResumeTests - 2018.10.08 at 18h 05m 15s.xml">
+      <configuration name="ProfileResumeTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testOpeningWindowResume - 2018.10.08 at 10h 47m 40s.xml">
-      <configuration name="LoginTest.testOpeningWindowResume" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests - 2018.10.08 at 18h 07m 41s.xml">
+      <configuration name="ProfileAddDeviceTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testOpeningWindowResume - 2018.10.08 at 10h 48m 21s.xml">
-      <configuration name="LoginTest.testOpeningWindowResume" configurationId="TestNG" />
+    <history-entry file="ProfileScheduleWorkTests - 2018.10.08 at 18h 09m 57s.xml">
+      <configuration name="ProfileScheduleWorkTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest - 2018.10.08 at 10h 49m 07s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
+    <history-entry file="ProfileScheduleWorkTests - 2018.10.08 at 18h 11m 20s.xml">
+      <configuration name="ProfileScheduleWorkTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="LoginTest_testOpeningWindowResume - 2018.10.08 at 12h 07m 11s.xml">
-      <configuration name="LoginTest.testOpeningWindowResume" configurationId="TestNG" />
+    <history-entry file="ProfileScheduleWorkTests - 2018.10.08 at 18h 13m 52s.xml">
+      <configuration name="ProfileScheduleWorkTests" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46490000" />
+    <option name="totallyTimeSpent" value="56528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="721" y="100" width="1199" height="872" extended-state="0" />
+    <frame x="721" y="80" width="1199" height="872" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19619706" />
@@ -467,8 +512,8 @@
       <window_info id="Image Layers" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.34102565" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33717948" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.34102565" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -499,28 +544,100 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java</url>
-          <line>63</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>15</line>
           <properties />
-          <option name="timeStamp" value="167" />
+          <option name="timeStamp" value="280" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>16</line>
           <properties />
-          <option name="timeStamp" value="168" />
+          <option name="timeStamp" value="281" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java</url>
-          <line>65</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>17</line>
           <properties />
-          <option name="timeStamp" value="169" />
+          <option name="timeStamp" value="282" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java</url>
-          <line>117</line>
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>18</line>
           <properties />
-          <option name="timeStamp" value="170" />
+          <option name="timeStamp" value="283" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="284" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="285" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="286" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="287" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="288" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>25</line>
+          <properties />
+          <option name="timeStamp" value="289" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="290" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="291" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="294" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="296" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -616,10 +733,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="66" column="5" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="64" column="87" selection-start-line="64" selection-start-column="87" selection-end-line="64" selection-end-column="87" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="62" column="71" selection-start-line="62" selection-start-column="71" selection-end-line="62" selection-end-column="71" />
+        <state relative-caret-position="276">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
