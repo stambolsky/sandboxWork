@@ -10,9 +10,14 @@ import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.Color;
 import org.testng.Assert;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 
@@ -21,10 +26,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ApplicationManager {
     public WebDriver wd;
     private String browser;
+    private final Properties properties;
 
 
     public ApplicationManager(String browser) {
         this.browser = browser;
+        properties = new Properties();
     }
 
     public void checkBrowser() {
@@ -36,21 +43,27 @@ public class ApplicationManager {
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
     }
 
-    public void init() {
+    public void init() throws IOException {
         open();
-        login("Мистер АвтоМяу", "12345678");
+        properties.load(new FileReader(new File("src/test/resources/authorization.properties")));
+        login(properties.getProperty("login"), properties.getProperty("password"));
     }
 
-    public void open() {
-        wd.get("http://tt-develop.quality-lab.ru/login");
+    public void open() throws IOException {
+        properties.load(new FileReader(new File("src/test/resources/URL.properties")));
+        wd.get(properties.getProperty("LoginPage"));
     }
 
-    private void login(String username, String password) {
-        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='username']")).isDisplayed());
-        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='password']")).isDisplayed());
+    private void login(String username, String password){
+        checkFieldLoginAndPassword();
         wd.findElement(By.xpath("//input[@id='username']")).sendKeys(username);
         wd.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
         wd.findElement(By.xpath("//input[@id='_submit']")).click();
+    }
+
+    private void checkFieldLoginAndPassword() {
+        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='username']")).isDisplayed());
+        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='password']")).isDisplayed());
     }
 
     public String checkPageUrl() {
