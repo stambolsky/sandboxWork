@@ -139,6 +139,16 @@ public class ApplicationManager {
         return listOfElements;
     }
 
+    public void refreshPage() throws InterruptedException {
+        wd.navigate().refresh();
+        Thread.sleep(5000);
+    }
+
+    public void clickWaitElement(String s, int i) throws InterruptedException {
+        wd.findElement(By.xpath(s)).click();
+        Thread.sleep(i);
+    }
+
 
 }
 
