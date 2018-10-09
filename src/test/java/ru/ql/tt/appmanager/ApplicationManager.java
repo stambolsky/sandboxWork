@@ -105,9 +105,6 @@ public class ApplicationManager {
         return res;
     }
 
-
-
-
     public boolean allElementsBlock() {
         String menu = "//div[contains(@class,'m-portlet__head m-stack m-stack--ver m-stack--general')]";
         String logo = "//div[@class='m-portlet']//div[@class='avatarCover']";
@@ -149,6 +146,21 @@ public class ApplicationManager {
         Thread.sleep(i);
     }
 
+    public void findClickElement(String s) {
+        wd.findElement(By.xpath(s)).click();
+    }
+
+    public void addDevice() throws InterruptedException {
+        clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
+        findClickElement("//div[@id='parentTypeAdd']//option[@value='2'][contains(text(),'ПК')]");
+        findClickElement("//div[@id='parentOSAdd']//option[@value='4'][contains(text(),'Linux')]");
+        findClickElement("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]");
+        refreshPage();
+    }
+
+    public void sendData(String element, String text) {
+        wd.findElement(By.xpath(element)).sendKeys(text);
+    }
 
 }
 

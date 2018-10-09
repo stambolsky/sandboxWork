@@ -12,7 +12,7 @@ public class ProfileCreateResumeTests extends TestBase {
 
     @Test
     public void testOpenNewTabCreateResume() {
-        app.wd.findElement(By.xpath("//a[@class='btn btn-brand m-btn']")).click();
+        app.findClickElement("//a[@class='btn btn-brand m-btn']");
         String idWindow = app.wd.getWindowHandle();
         Set<String> idOpeningWindows = app.wd.getWindowHandles();
         for (String tab : idOpeningWindows) {

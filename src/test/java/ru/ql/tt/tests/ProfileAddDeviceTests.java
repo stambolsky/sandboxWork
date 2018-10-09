@@ -14,8 +14,8 @@ public class ProfileAddDeviceTests extends TestBase {
         app.clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
         assertTrue(app.wd.findElement(By.xpath("//div[@id='popup-add-environment']//div[@class='modal-content']")).isDisplayed());
         assertEquals(app.wd.findElement(By.xpath("//h5[contains(text(),'Добавление нового устройства')]")).getText(),"Добавление нового устройства");
-        app.wd.findElement(By.xpath("//div[@id='parentTypeAdd']//option[@value='6'][contains(text(),'Телефон')]")).click();
-        app.wd.findElement(By.xpath("//form[@action='/api/v1/environment/user/263/create.json']//input[@name='manufacturer-device']")).sendKeys("Apple");
+        app.findClickElement("//div[@id='parentTypeAdd']//option[@value='6'][contains(text(),'Телефон')]");
+        app.sendData("//form[@action='/api/v1/environment/user/263/create.json']//input[@name='manufacturer-device']", "Apple");
         app.clickWaitElement("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]", 5000);
         assertTrue(app.wd.findElement(By.xpath("//td[contains(text(),'Телефон')]")).getText().equalsIgnoreCase("Телефон"));
         assertTrue(app.wd.findElement(By.xpath("//td[contains(text(),'APPLE')]")).getText().equalsIgnoreCase("Apple"));
@@ -28,14 +28,10 @@ public class ProfileAddDeviceTests extends TestBase {
     //Кнопка “Закрыть без сохранения”.
     @Test
     public void testNotSaveButtonCloseAddDevice() throws InterruptedException {
-        app.clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
-        app.wd.findElement(By.xpath("//div[@id='parentTypeAdd']//option[@value='2'][contains(text(),'ПК')]")).click();
-        app.wd.findElement(By.xpath("//div[@id='parentOSAdd']//option[@value='4'][contains(text(),'Linux')]")).click();
-        app.wd.findElement(By.xpath("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]")).click();
-        app.refreshPage();
+        app.addDevice();
         String typeDevice = app.wd.findElement(By.xpath("//td[contains(text(),'ПК')]")).getAttribute("data-type");
         app.clickWaitElement("//a[@class='btn m-btn btn-nav-action m-btn--icon m-btn--icon-only m-btn--pill edit-environment']", 500);
-        app.wd.findElement(By.xpath("//div[@id='parentOSEdit']//option[@value='2'][contains(text(),'Android')]")).click();
+        app.findClickElement("//div[@id='parentOSEdit']//option[@value='2'][contains(text(),'Android')]");
         app.clickWaitElement("//div[@id='popup-edit-environment']//button[@type='button'][contains(text(),'Закрыть без сохранения')]", 500);
         assertEquals(typeDevice, app.wd.findElement(By.xpath("//td[contains(text(),'ПК')]")).getAttribute("data-type"));
         app.clickWaitElement("//tbody[@class='m-datatable__body']/tr[1]/td[7]/a[2]", 500);
@@ -45,14 +41,10 @@ public class ProfileAddDeviceTests extends TestBase {
     //Кнопка “Крестик”.
     @Test
     public void testNotSaveIconCrossAddDevice() throws InterruptedException {
-        app.clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
-        app.wd.findElement(By.xpath("//div[@id='parentTypeAdd']//option[@value='2'][contains(text(),'ПК')]")).click();
-        app.wd.findElement(By.xpath("//div[@id='parentOSAdd']//option[@value='4'][contains(text(),'Linux')]")).click();
-        app.wd.findElement(By.xpath("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]")).click();
-        app.refreshPage();
+        app.addDevice();
         String typeDevice = app.wd.findElement(By.xpath("//td[contains(text(),'ПК')]")).getAttribute("data-type");
         app.clickWaitElement("//a[@class='btn m-btn btn-nav-action m-btn--icon m-btn--icon-only m-btn--pill edit-environment']", 500);
-        app.wd.findElement(By.xpath("//div[@id='parentOSEdit']//option[@value='2'][contains(text(),'Android')]")).click();
+        app.findClickElement("//div[@id='parentOSEdit']//option[@value='2'][contains(text(),'Android')]");
         app.clickWaitElement("//div[@id='popup-edit-environment']//div[@class='modal-header']//button[@type='button']", 500);
         assertEquals(typeDevice, app.wd.findElement(By.xpath("//td[contains(text(),'ПК')]")).getAttribute("data-type"));
         app.clickWaitElement("//tbody[@class='m-datatable__body']/tr[1]/td[7]/a[2]", 500);

@@ -15,12 +15,12 @@ public class ProfileScheduleWorkTests extends TestBase {
         app.clickWaitElement("//button[contains(text(),'Редактировать график')]", 500);
         assertTrue(app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//div[@class='modal-content']")).isDisplayed());
         assertEquals(app.wd.findElement(By.xpath("//h5[contains(text(),'Изменение графика работы')]")).getText(),"Изменение графика работы");
-        app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[1]//a[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[3]//a[1]")).click();
-        app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[2]//div[1]//input[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[1]//a[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[3]//a[1]")).click();
+        app.findClickElement("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]");
+        app.findClickElement("//tbody//tr[1]//td[1]//a[1]");
+        app.findClickElement("//tbody//tr[1]//td[3]//a[1]");
+        app.findClickElement("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[2]//div[1]//input[1]");
+        app.findClickElement("//tbody//tr[1]//td[1]//a[1]");
+        app.findClickElement("//tbody//tr[1]//td[3]//a[1]");
         String beforeStart = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).getAttribute("value");
         String beforeEnd = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[2]//div[1]//input[1]")).getAttribute("value");
         String beforeTime = beforeStart + " - " + beforeEnd;
@@ -33,9 +33,9 @@ public class ProfileScheduleWorkTests extends TestBase {
     @Test
     public void testNotSaveButtonCloseSchedulWork() throws InterruptedException {
         app.clickWaitElement("//button[contains(text(),'Редактировать график')]", 500);
-        app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[1]//a[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[3]//a[1]")).click();
+        app.findClickElement("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]");
+        app.findClickElement("//tbody//tr[1]//td[1]//a[1]");
+        app.findClickElement("//tbody//tr[1]//td[3]//a[1]");
         String beforeStart = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).getAttribute("value");
         String beforeEnd = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).getAttribute("value");
         String beforeTime = beforeStart + " - " + beforeEnd;
@@ -54,9 +54,9 @@ public class ProfileScheduleWorkTests extends TestBase {
     @Test
     public void testNotSaveIconCrossSchedulWork() throws InterruptedException {
         app.clickWaitElement("//button[contains(text(),'Редактировать график')]", 500);
-        app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[1]//a[1]")).click();
-        app.wd.findElement(By.xpath("//tbody//tr[1]//td[3]//a[1]")).click();
+        app.findClickElement("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]");
+        app.findClickElement("//tbody//tr[1]//td[1]//a[1]");
+        app.findClickElement("//tbody//tr[1]//td[3]//a[1]");
         String beforeStart = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).getAttribute("value");
         String beforeEnd = app.wd.findElement(By.xpath("//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]")).getAttribute("value");
         String beforeTime = beforeStart + " - " + beforeEnd;
