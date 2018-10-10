@@ -217,5 +217,21 @@ public class ApplicationManager {
         clickWaitElement(MODAL_EDIT_SAVE_BUTTON, 5000);
     }
 
+    public void checkNotSaveFormResume(String modalResumeEditIconCross) throws InterruptedException {
+        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 1000);
+        wd.findElement(By.xpath(MODAL_WINDOW_EDIT_TEXTAREA)).clear();
+        sendData(MODAL_WINDOW_EDIT_TEXTAREA, "Финансист");
+        findClickElement(MODAL_WINDOW_EDIT_TIP_TEXTAREA);
+        clickWaitElement(modalResumeEditIconCross, 1000);
+        String before = findGetText(PROFILE_RESUME_SHORT_RESUME);
+        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 1000);
+        String after = findGetText(MODAL_WINDOW_EDIT_TEXTAREA);
+        if (after.equals("")) {
+            after = "Краткое резюме не указано";
+        }
+        Assert.assertEquals(before, after);
+        clickWaitElement(modalResumeEditIconCross, 2000);
+    }
+
 }
 
