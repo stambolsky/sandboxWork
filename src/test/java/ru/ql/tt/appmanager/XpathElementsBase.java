@@ -20,19 +20,26 @@ public class XpathElementsBase {
     public static String BUTTON_CREATE_RESUME = "//a[contains(text(), 'Сформировать резюме')]";
     public static String HEADER = "//div[contains(@class,'m-portlet__head m-stack m-stack--ver m-stack--general')]";
     public static String LOGO = "//div[@class='m-portlet']//div[@class='avatarCover']";
+    public static String FIRST_AND_LAST_NAME = "//span[@id='headerName']";
+    public static String PROFILE_BUTTON_CREATE_RESUME = "//a[@class='btn btn-brand m-btn']";
     public static String BLOCK_MENU = "//div[contains(@class,'m-stack__item m-stack__item--left m-stack--ver m-stack__item--middle m-stack__item--fluid')]";
     public static String TITLE_PROFILE = "//div[contains(@class,'m-subheader')]";
     public static String BLOCK_RESUME = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][1]";
     public static String BLOCK_SCHEDULE_WORK = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][2]";
     public static String BLOCK_CONTACTS = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][3]";
+    public static String PROFILE_RESUME_FIELD_PLACE = "//span[@class='m-list-search__result-item-text post-name']";
     public static String PROFILE_CONTACTS_FIELD_PHONE = "//a[contains(@class,'m-list-search__result-item')]//span[contains(@class,'m-list-search__result-item-text phone')]";
     public static String PROFILE_CONTACTS_FIELD_SKYPE = "//span[contains(@class,'m-list-search__result-item-text skype')]";
     public static String PROFILE_CONTACTS_FIELD_EMAIL = "//span[@class='m-list-search__result-item-text corporate-email']";
 
     public static String BLOCK_DEVICES = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][4]";
 
+    //------------Window create resume------//
+    public static String WINDOW_RESUME_FIRST_NAME = "//div[@class='count-subsection user-info']//div[3]//p[1]";
+    public static String WINDOW_RESUME_LAST_NAME = "//div[@class='count-subsection user-info']//div[3]//p[2]";
+    public static String WINDOW_RESUME_PLACE = "//div[@class='user-position-name name editable ck-blurred ck-editor__editable ck-rounded-corners ck-editor__editable_inline']";
 
-
+    //------------Resume--------------------//
 
 
     //-------------Devices------------------//

@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -35,14 +32,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="17" />
-          <entry key="java" value="9294" />
+          <entry key="java" value="9535" />
           <entry key="properties" value="15" />
           <entry key="xml" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="9294" />
+          <entry key="JAVA" value="9535" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="22" />
@@ -91,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="568">
-              <caret line="68" selection-start-line="68" selection-end-line="68" />
+            <state relative-caret-position="299">
+              <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -130,8 +127,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+            <state relative-caret-position="375">
+              <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,18 +200,18 @@
         <option value="$PROJECT_DIR$/src/test/resources/allure.properties" />
         <option value="$PROJECT_DIR$/src/test/resources/authorization.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/URL.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/XpathBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" />
       </list>
     </option>
   </component>
@@ -334,7 +331,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539176221338" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539177060876" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -360,7 +357,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ProfileContactTests">
+  <component name="RunManager" selected="TestNG.ProfileCreateResumeTests">
     <configuration name="ProfileAddDeviceTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
@@ -450,11 +447,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.ProfileCreateResumeTests" />
         <item itemvalue="TestNG.ProfileContactTests" />
         <item itemvalue="TestNG.ProfileAddDeviceTests" />
         <item itemvalue="TestNG.ProfileScheduleWorkTests" />
         <item itemvalue="TestNG.ProfileResumeTests" />
-        <item itemvalue="TestNG.ProfileCreateResumeTests" />
       </list>
     </recent_temporary>
   </component>
@@ -476,7 +473,7 @@
       <workItem from="1539020693801" duration="74000" />
       <workItem from="1539021911095" duration="179000" />
       <workItem from="1539075404478" duration="2595000" />
-      <workItem from="1539159479767" duration="12701000" />
+      <workItem from="1539159479767" duration="13240000" />
     </task>
     <servers />
   </component>
@@ -513,7 +510,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81721000" />
+    <option name="totallyTimeSpent" value="82260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="776" y="23" width="1112" height="872" extended-state="0" />
@@ -580,25 +577,25 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>12</line>
+          <line>13</line>
           <properties />
           <option name="timeStamp" value="60" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>23</line>
+          <line>24</line>
           <properties />
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>24</line>
+          <line>25</line>
           <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>25</line>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
@@ -811,13 +808,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="68" selection-start-line="68" selection-end-line="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -889,10 +879,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="31" column="41" lean-forward="true" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="27" lean-forward="true" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
+        <state relative-caret-position="375">
+          <caret line="25" column="61" selection-start-line="25" selection-start-column="61" selection-end-line="25" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
