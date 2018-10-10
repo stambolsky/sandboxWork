@@ -180,5 +180,16 @@ public class ApplicationManager {
         }
     }
 
+    public void checkNotSaveFormDevices(String button) throws InterruptedException {
+        addDevice();
+        String typeDevice = wd.findElement(By.xpath(TABLE_FIELD_TYPE_PC)).getAttribute("data-type");
+        clickWaitElement(TABLE_ICON_EDIT, 500);
+        findClickElement(EDIT_WINDOW_OS_ANDROID);
+        clickWaitElement(button, 500);
+        Assert.assertEquals(typeDevice, wd.findElement(By.xpath(TABLE_FIELD_TYPE_PC)).getAttribute("data-type"));
+        clickWaitElement(TABLE_ICON_TRASH, 500);
+        clickWaitElement(BUTTON_DELETE_DEVICE, 2000);
+    }
+
 }
 

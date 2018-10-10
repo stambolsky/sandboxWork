@@ -1,11 +1,7 @@
 package ru.ql.tt.tests;
 
 import org.testng.annotations.Test;
-
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
-
 import static org.testng.Assert.*;
 
 public class LoginTest extends TestBase{
