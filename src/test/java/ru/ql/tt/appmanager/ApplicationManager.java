@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static ru.ql.tt.appmanager.XpathElementsBase.*;
 
 public class ApplicationManager {
     public WebDriver wd;
@@ -66,14 +67,14 @@ public class ApplicationManager {
 
     private void login(String username, String password){
         checkFieldLoginAndPassword();
-        wd.findElement(By.xpath("//input[@id='username']")).sendKeys(username);
-        wd.findElement(By.xpath("//input[@id='password']")).sendKeys(password);
-        wd.findElement(By.xpath("//input[@id='_submit']")).click();
+        wd.findElement(By.xpath(LOGIN)).sendKeys(username);
+        wd.findElement(By.xpath(PASSWORD)).sendKeys(password);
+        wd.findElement(By.xpath(SUBMIT)).click();
     }
 
     private void checkFieldLoginAndPassword() {
-        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='username']")).isDisplayed());
-        Assert.assertTrue(wd.findElement(By.xpath("//input[@id='password']")).isDisplayed());
+        Assert.assertTrue(wd.findElement(By.xpath(LOGIN)).isDisplayed());
+        Assert.assertTrue(wd.findElement(By.xpath(PASSWORD)).isDisplayed());
     }
 
     public String checkPageUrl() {
@@ -82,8 +83,8 @@ public class ApplicationManager {
     }
 
     public void goToProfile() {
-        wd.findElement(By.xpath("//span[contains(@class,'m-topbar__userpic')]//div//div[contains(@class,'avatarCover')]")).click();
-        wd.findElement(By.xpath("//span[contains(@class,'m-nav__link-text')]")).click();
+        wd.findElement(By.xpath(AVATARCOVER)).click();
+        wd.findElement(By.xpath(LINK_PROFILE)).click();
     }
 
     public void stop() {
@@ -91,14 +92,14 @@ public class ApplicationManager {
     }
 
     public String getLoginNew() {
-        String name = wd.findElement(By.xpath("//span[@id='headerName']")).getText();
+        String name = wd.findElement(By.xpath(NAME_USER)).getText();
         return name;
     }
 
     public boolean UserPhotoAboveResume() {
         boolean res = true;
-        int firstElement = wd.findElement(By.xpath("//img[contains(@class,'avatar')]")).getLocation().getX();
-        int secondElement = wd.findElement(By.xpath("//div[@class='m-portlet__body']//div[@class='m-portlet'][1]")).getLocation().getY();
+        int firstElement = wd.findElement(By.xpath(AVATAR)).getLocation().getX();
+        int secondElement = wd.findElement(By.xpath(BLOCK_RESUME)).getLocation().getY();
         if (firstElement - secondElement > 0) {
             res = false;
         }
@@ -107,7 +108,7 @@ public class ApplicationManager {
 
     public boolean checkColorButtonCreateResume() {
         boolean res = true;
-        String color = wd.findElement(By.xpath("//a[contains(text(), 'Сформировать резюме')]")).getCssValue("background-color");
+        String color = wd.findElement(By.xpath(BUTTON_CREATE_RESUME)).getCssValue("background-color");
         String hex = Color.fromString(color).asHex();
         if (!hex.equals("#716aca")) {
             res = false;
@@ -116,15 +117,8 @@ public class ApplicationManager {
     }
 
     public boolean allElementsBlock() {
-        String menu = "//div[contains(@class,'m-portlet__head m-stack m-stack--ver m-stack--general')]";
-        String logo = "//div[@class='m-portlet']//div[@class='avatarCover']";
-        String menuBlock = "//div[contains(@class,'m-stack__item m-stack__item--left m-stack--ver m-stack__item--middle m-stack__item--fluid')]";
-        String titleProfile = "//div[contains(@class,'m-subheader')]";
-        String resume = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][1]";
-        String scheduleWork = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][2]";
-        String contacts = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][3]";
-        String devices = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][4]";
-        String[] elements = {menu, logo, menuBlock, titleProfile, resume, scheduleWork, contacts,devices};
+        String[] elements = {HEADER, LOGO, BLOCK_MENU, TITLE_PROFILE, BLOCK_RESUME, BLOCK_SCHEDULE_WORK
+                ,BLOCK_CONTACTS,BLOCK_DEVICES};
         return allElementInBlock(elements);
     }
 
@@ -161,10 +155,10 @@ public class ApplicationManager {
     }
 
     public void addDevice() throws InterruptedException {
-        clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
-        findClickElement("//div[@id='parentTypeAdd']//option[@value='2'][contains(text(),'ПК')]");
-        findClickElement("//div[@id='parentOSAdd']//option[@value='4'][contains(text(),'Linux')]");
-        findClickElement("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]");
+        clickWaitElement(BUTTON_ADD_DEVICES, 500);
+        findClickElement(TYPE_PC);
+        findClickElement(TYPE_OS_LINUX);
+        findClickElement(BUTTON_DEVICE_SAVE);
         refreshPage();
     }
 
