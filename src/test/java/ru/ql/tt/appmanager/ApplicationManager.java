@@ -14,10 +14,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Collection;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Properties;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 
@@ -53,6 +50,19 @@ public class ApplicationManager {
         properties.load(new FileReader(new File("src/test/resources/URL.properties")));
         wd.get(properties.getProperty("LoginPage"));
     }
+    public String getLogin() throws IOException {
+        properties.load(new FileReader(new File("src/test/resources/authorization.properties")));
+        String login = properties.getProperty("login");
+        return login;
+    }
+
+    public String getUrlProfilePage() throws IOException {
+        properties.load(new FileReader(new File("src/test/resources/URL.properties")));
+        String url = properties.getProperty("ProfilePage");
+        return url;
+
+    }
+
 
     private void login(String username, String password){
         checkFieldLoginAndPassword();
@@ -80,7 +90,7 @@ public class ApplicationManager {
         wd.quit();
     }
 
-    public String getLogin() {
+    public String getLoginNew() {
         String name = wd.findElement(By.xpath("//span[@id='headerName']")).getText();
         return name;
     }
@@ -160,6 +170,20 @@ public class ApplicationManager {
 
     public void sendData(String element, String text) {
         wd.findElement(By.xpath(element)).sendKeys(text);
+    }
+
+    public String findGetText(String s) {
+        return wd.findElement(By.xpath(s)).getText();
+    }
+
+    public void switchWindow(String idWindow) {
+        Set<String> idOpeningWindows = wd.getWindowHandles();
+        for (String tab : idOpeningWindows) {
+            if (!tab.equals(idWindow)) {
+                wd.switchTo().window(tab);
+                break;
+            }
+        }
     }
 
 }

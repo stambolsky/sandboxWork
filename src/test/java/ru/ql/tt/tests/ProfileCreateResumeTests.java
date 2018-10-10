@@ -1,8 +1,6 @@
 package ru.ql.tt.tests;
 
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import java.util.Set;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.AssertJUnit.assertTrue;
@@ -14,22 +12,17 @@ public class ProfileCreateResumeTests extends TestBase {
     public void testOpenNewTabCreateResume() {
         app.findClickElement("//a[@class='btn btn-brand m-btn']");
         String idWindow = app.wd.getWindowHandle();
-        Set<String> idOpeningWindows = app.wd.getWindowHandles();
-        for (String tab : idOpeningWindows) {
-            if (!tab.equals(idWindow)) {
-                app.wd.switchTo().window(tab);
-                break;
-            }
-        }
+        app.switchWindow(idWindow);
         String titleNewWindows = app.wd.getTitle();
         assertEquals(titleNewWindows, "Первая страница");
-        String firstname = app.wd.findElement(By.xpath("//div[@class='count-subsection user-info']//div[3]//p[1]")).getText();
-        String lastname = app.wd.findElement(By.xpath("//div[@class='count-subsection user-info']//div[3]//p[2]")).getText();
+        String firstname = app.findGetText("//div[@class='count-subsection user-info']//div[3]//p[1]");
+        String lastname = app.findGetText("//div[@class='count-subsection user-info']//div[3]//p[2]");
         String name = lastname + " " + firstname;
-        String place = app.wd.findElement(By.xpath("//div[@class='user-position-name name editable ck-blurred ck-editor__editable ck-rounded-corners ck-editor__editable_inline']")).getText();
+        String place = app.findGetText("//div[@class='user-position-name name editable ck-blurred ck-editor__editable ck-rounded-corners ck-editor__editable_inline']");
         app.wd.close();
         app.wd.switchTo().window(idWindow);
-        assertTrue(app.wd.findElement(By.xpath("//span[@id='headerName']")).getText().equalsIgnoreCase(name));
-        assertTrue(app.wd.findElement(By.xpath("//span[@class='m-list-search__result-item-text post-name']")).getText().equalsIgnoreCase(place));
+        assertTrue(app.findGetText("//span[@id='headerName']").equalsIgnoreCase(name));
+        assertTrue(app.findGetText("//span[@class='m-list-search__result-item-text post-name']").equalsIgnoreCase(place));
     }
+
 }

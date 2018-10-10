@@ -13,12 +13,12 @@ public class ProfileAddDeviceTests extends TestBase {
     public void testOpeningWindowAddDevice() throws InterruptedException {
         app.clickWaitElement("//span[contains(text(),'Добавить устройство')]", 500);
         assertTrue(app.wd.findElement(By.xpath("//div[@id='popup-add-environment']//div[@class='modal-content']")).isDisplayed());
-        assertEquals(app.wd.findElement(By.xpath("//h5[contains(text(),'Добавление нового устройства')]")).getText(),"Добавление нового устройства");
+        assertEquals(app.findGetText("//h5[contains(text(),'Добавление нового устройства')]"),"Добавление нового устройства");
         app.findClickElement("//div[@id='parentTypeAdd']//option[@value='6'][contains(text(),'Телефон')]");
         app.sendData("//form[@action='/api/v1/environment/user/263/create.json']//input[@name='manufacturer-device']", "Apple");
         app.clickWaitElement("//div[@id='popup-add-environment']//button[@name='save'][contains(text(),'Сохранить')]", 5000);
-        assertTrue(app.wd.findElement(By.xpath("//td[contains(text(),'Телефон')]")).getText().equalsIgnoreCase("Телефон"));
-        assertTrue(app.wd.findElement(By.xpath("//td[contains(text(),'APPLE')]")).getText().equalsIgnoreCase("Apple"));
+        assertTrue(app.findGetText("//td[contains(text(),'Телефон')]").equalsIgnoreCase("Телефон"));
+        assertTrue(app.findGetText("//td[contains(text(),'APPLE')]").equalsIgnoreCase("Apple"));
         app.clickWaitElement("//tbody[@class='m-datatable__body']/tr[1]/td[7]/a[2]", 500);
         app.clickWaitElement("//form[@action='/api/v1/environment/user/263/delete.json']//button[@type='button'][contains(text(),'Удалить')]", 5000);
         //баг - блок не видимый

@@ -2,15 +2,21 @@ package ru.ql.tt.tests;
 
 import org.testng.annotations.Test;
 
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
 import static org.testng.Assert.*;
 
 public class LoginTest extends TestBase{
 
     @Test
-    public void testProfilePage() {
-        String name = app.getLogin();
-        assertEquals("Мистер АвтоМяу", name);
-        assertEquals(app.checkPageUrl(), "http://tt-develop.quality-lab.ru/user/263/show/profile");
+    public void testProfilePage() throws IOException {
+        String name = app.getLoginNew();
+        String login = app.getLogin();
+        String url = app.getUrlProfilePage();
+        assertEquals(login, name);
+        assertEquals(app.checkPageUrl(), url);
     }
 
     //"Фотография пользователя находится вверху страницы, над блоком резюме пользователя."
