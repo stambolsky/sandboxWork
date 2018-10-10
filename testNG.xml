@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite Sandbox" verbose="10" >
+    <test name="TT" >
+        <classes>
+            <class name="ru.ql.tt.tests.LoginTest" />
+            <class name="ru.ql.tt.tests.ProfileAddDeviceTests" />
+            <class name="ru.ql.tt.tests.ProfileContactTests" />
+            <class name="ru.ql.tt.tests.ProfileCreateResumeTests" />
+            <class name="ru.ql.tt.tests.ProfileResumeTests" />
+            <class name="ru.ql.tt.tests.ProfileScheduleWorkTests" />
+        </classes>
+    </test>
+</suite>
