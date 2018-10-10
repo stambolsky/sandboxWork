@@ -28,6 +28,8 @@ public class XpathElementsBase {
     public static String BLOCK_SCHEDULE_WORK = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][2]";
     public static String BLOCK_CONTACTS = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][3]";
     public static String PROFILE_RESUME_FIELD_PLACE = "//span[@class='m-list-search__result-item-text post-name']";
+    public static String PROFILE_RESUME_BUTTON_EDIT = "//button[@type='button'][contains(text(),'Редактировать резюме')]";
+    public static String PROFILE_RESUME_SHORT_RESUME = "//span[@class='m-list-search__result-item-text post-description']";
     public static String PROFILE_CONTACTS_FIELD_PHONE = "//a[contains(@class,'m-list-search__result-item')]//span[contains(@class,'m-list-search__result-item-text phone')]";
     public static String PROFILE_CONTACTS_FIELD_SKYPE = "//span[contains(@class,'m-list-search__result-item-text skype')]";
     public static String PROFILE_CONTACTS_FIELD_EMAIL = "//span[@class='m-list-search__result-item-text corporate-email']";
@@ -40,6 +42,13 @@ public class XpathElementsBase {
     public static String WINDOW_RESUME_PLACE = "//div[@class='user-position-name name editable ck-blurred ck-editor__editable ck-rounded-corners ck-editor__editable_inline']";
 
     //------------Resume--------------------//
+    public static String MODAL_WINDOW_EDIT_RESUME = "//div[@id='popup-edit-resume']//div[@class='modal-content']";
+    public static String MODAL_WINDOW_EDIT_TITLE = "//div[@id='popup-edit-resume']//h5[@id='exampleModalLabel']";
+    public static String MODAL_WINDOW_EDIT_TEXTAREA = "//textarea[@id='post-description']";
+    public static String MODAL_WINDOW_EDIT_BUTTON_SAVE = "//div[@id='popup-edit-resume']//button[@type='button'][contains(text(),'Сохранить')]";
+    public static String MODAL_WINDOW_EDIT_TIP_TEXTAREA = "//form[@class='post-info']//div[3]";
+    public static String MODAL_RESUME_EDIT_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-resume']//button[@type='button'][contains(text(),'Закрыть без сохранения')]";
+    public static String MODAL_RESUME_EDIT_ICON_CROSS = "//div[@id='popup-edit-resume']//button[@type='button'][contains(text(),'Закрыть без сохранения')]";
 
 
     //-------------Devices------------------//
