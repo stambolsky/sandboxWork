@@ -1,6 +1,5 @@
 package ru.ql.tt.appmanager;
 
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,17 +8,13 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.Color;
 import org.testng.Assert;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertNotEquals;
 import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.appmanager.XpathElementsBase.*;
 
@@ -231,6 +226,34 @@ public class ApplicationManager {
         }
         Assert.assertEquals(before, after);
         clickWaitElement(modalResumeEditIconCross, 2000);
+    }
+
+    public void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) throws InterruptedException {
+        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
+        findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
+        String beforeStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
+        String beforeEnd = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK)).getAttribute("value");
+        String beforeTime = beforeStart + " - " + beforeEnd;
+        clickWaitElement(modalWindowEditIconCross, 2000);
+        String after = findGetText(PROFILE_TABLE_TIME_MONDAY);
+        assertNotEquals(after, beforeTime);
+        wd.navigate().refresh();
+        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
+        String afterRefresh = after.substring(0,5);
+        String afterStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
+        Assert.assertEquals(afterStart, afterRefresh);
+        clickWaitElement(MODAL_WINDOW_EDIT_ICON_CROSS, 2000);
+    }
+
+    public void changeTimeScheduleWork() {
+        findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
+        findClickElement(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
     }
 
 }
