@@ -2,8 +2,6 @@ package ru.ql.tt.tests;
 
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import ru.ql.tt.appmanager.XpathElementsBase;
-
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.appmanager.XpathElementsBase.*;

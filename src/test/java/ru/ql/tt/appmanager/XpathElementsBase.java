@@ -25,6 +25,10 @@ public class XpathElementsBase {
     public static String BLOCK_RESUME = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][1]";
     public static String BLOCK_SCHEDULE_WORK = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][2]";
     public static String BLOCK_CONTACTS = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][3]";
+    public static String PROFILE_CONTACTS_FIELD_PHONE = "//a[contains(@class,'m-list-search__result-item')]//span[contains(@class,'m-list-search__result-item-text phone')]";
+    public static String PROFILE_CONTACTS_FIELD_SKYPE = "//span[contains(@class,'m-list-search__result-item-text skype')]";
+    public static String PROFILE_CONTACTS_FIELD_EMAIL = "//span[@class='m-list-search__result-item-text corporate-email']";
+
     public static String BLOCK_DEVICES = "//div[@id='m_tabs_6_1']/div[@class='m-portlet'][4]";
 
 
@@ -51,6 +55,18 @@ public class XpathElementsBase {
     public static String EDIT_WINDOW_OS_ANDROID = "//div[@id='parentOSEdit']//option[@value='2'][contains(text(),'Android')]";
     public static String EDIT_WINDOW_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-environment']//button[@type='button'][contains(text(),'Закрыть без сохранения')]";
     public static String EDIT_WINDOW_ICON_CROSS = "//div[@id='popup-edit-environment']//div[@class='modal-header']//button[@type='button']";
+
+    //--------------Contacts-----------------//
+    public static String BUTTON_EDIT_CONTACTS = "//button[contains(text(),'Редактировать контакты')]";
+    public static String MODAL_WINDOW_EDIT_CONTACTS = "//div[@id='popup-edit-contact']//div[@class='modal-content']";
+    public static String TITLE_MODAL_WINDOW_EDIT_CONTACTS = "//div[@id='popup-edit-contact']//h5[@id='exampleModalLabel']";
+    public static String MODAL_EDIT_PHONE_FIELD = "//input[@id='phone']";
+    public static String MODAL_EDIT_SKYPE_FIELD = "//input[@id='skype']";
+    public static String MODAL_EDIT_SAVE_BUTTON = "//div[@id='popup-edit-contact']//button[contains(@type,'button')][contains(text(),'Сохранить')]";
+    public static String MODAL_EDIT_EMAIL = "//input[@id='corporate-email']";
+    public static String MODAL_EDIT_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-contact']//button[@type='button'][contains(text(),'Закрыть без сохранения')]";
+    public static String MODAL_EDIT_ICON_CROSS = "//div[@id='popup-edit-contact']//div[@class='modal-header']//button[@type='button']";
+
 
 
 

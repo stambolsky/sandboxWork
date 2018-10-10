@@ -19,6 +19,8 @@ import java.util.concurrent.TimeUnit;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.testng.Assert.assertFalse;
+import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.appmanager.XpathElementsBase.*;
 
 public class ApplicationManager {
@@ -189,6 +191,30 @@ public class ApplicationManager {
         Assert.assertEquals(typeDevice, wd.findElement(By.xpath(TABLE_FIELD_TYPE_PC)).getAttribute("data-type"));
         clickWaitElement(TABLE_ICON_TRASH, 500);
         clickWaitElement(BUTTON_DELETE_DEVICE, 2000);
+    }
+
+    public void checkNotSaveFormContacts(String modalEditButtonCloseNotSave) throws InterruptedException {
+        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        wd.findElement(By.xpath(MODAL_EDIT_EMAIL)).clear();
+        sendData(MODAL_EDIT_EMAIL, "test@test.test");
+        clickWaitElement(modalEditButtonCloseNotSave, 1000);
+        String email = findGetText(PROFILE_CONTACTS_FIELD_EMAIL);
+        assertFalse(email.equalsIgnoreCase("test@test.test"));
+        wd.navigate().refresh();
+        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        assertTrue(wd.findElement(By.xpath(MODAL_EDIT_EMAIL)).getAttribute("value").equalsIgnoreCase(email));
+        clickWaitElement(MODAL_EDIT_BUTTON_CLOSE_NOT_SAVE, 2000);
+    }
+
+    public void changeContactsInfo(String phone, String skype) throws InterruptedException {
+        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_EDIT_CONTACTS)).isDisplayed());
+        Assert.assertEquals(findGetText(TITLE_MODAL_WINDOW_EDIT_CONTACTS),"Изменение контактной информации");
+        wd.findElement(By.xpath(MODAL_EDIT_PHONE_FIELD)).clear();
+        sendData(MODAL_EDIT_PHONE_FIELD, phone);
+        wd.findElement(By.xpath(MODAL_EDIT_SKYPE_FIELD)).clear();
+        sendData(MODAL_EDIT_SKYPE_FIELD, skype);
+        clickWaitElement(MODAL_EDIT_SAVE_BUTTON, 5000);
     }
 
 }
