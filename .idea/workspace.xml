@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileЬethods.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,17 +22,17 @@
     <session id="-1703689342">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="5" />
-          <entry key="project.open.time.1" value="6" />
+          <entry key="project.open.time.1" value="8" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="java" value="10008" />
+          <entry key="java" value="10010" />
           <entry key="properties" value="15" />
           <entry key="testNG-login" value="30" />
           <entry key="xml" value="34" />
@@ -41,7 +40,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10008" />
+          <entry key="JAVA" value="10010" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="64" />
@@ -54,8 +53,8 @@
           <entry key="appmanager" value="1" />
           <entry key="class" value="6" />
           <entry key="iml" value="4" />
-          <entry key="java" value="44" />
-          <entry key="properties" value="6" />
+          <entry key="java" value="48" />
+          <entry key="properties" value="7" />
           <entry key="testNG-login" value="1" />
           <entry key="tt" value="1" />
           <entry key="xml" value="6" />
@@ -65,8 +64,8 @@
         <counts>
           <entry key="CLASS" value="6" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="44" />
-          <entry key="Properties" value="6" />
+          <entry key="JAVA" value="48" />
+          <entry key="Properties" value="7" />
           <entry key="UML" value="5" />
           <entry key="XML" value="7" />
         </counts>
@@ -75,11 +74,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="345">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -90,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="250" column="29" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
+            <state relative-caret-position="208">
+              <caret line="146" selection-start-line="146" selection-end-line="146" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,10 +99,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
+            <state relative-caret-position="30">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -111,8 +110,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="97" column="102" selection-start-line="97" selection-start-column="102" selection-end-line="97" selection-end-column="102" />
+            <state relative-caret-position="209">
+              <caret line="85" column="125" selection-start-line="85" selection-start-column="125" selection-end-line="85" selection-end-column="125" />
             </state>
           </provider>
         </entry>
@@ -120,10 +119,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
+            <state relative-caret-position="345">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#525#526#0" expanded="true" />
+                <element signature="e#551#552#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -132,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+            <state relative-caret-position="315">
+              <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -141,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/testNG.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -177,8 +178,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="525">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -202,6 +203,7 @@
       <find>//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[1]//div[1]//input[1]</find>
       <find>//div[@id='popup-edit-schedule']//form//div[@class='form-group m-form__group row']//div[2]//div[1]//input[1]</find>
       <find>//div[@id='popup-edit-schedule']//button[@type='button'][contains(text(),'Сохранить')]</find>
+      <find>EDIT_WINDOW_BUTTON_CLOSE_NOT_SAVE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -228,14 +230,16 @@
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testNG-login" />
         <option value="$PROJECT_DIR$/testNG.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileЬethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/methods/ProfileMethods.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestLisner.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestListener.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
       </list>
     </option>
   </component>
@@ -275,9 +279,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="668" />
-    <option name="y" value="39" />
-    <option name="width" value="1336" />
+    <option name="x" value="600" />
+    <option name="y" value="63" />
+    <option name="width" value="1319" />
     <option name="height" value="872" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -286,8 +290,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -326,18 +330,37 @@
               <item name="sandbox" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tt" type="462c0819:PsiDirectoryNode" />
+              <item name="appmanager" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tt" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539190100158" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539251275696" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -368,8 +391,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.ProfileAddDeviceTests.testNotSaveIconCrossAddDevice">
-    <configuration name="ProfileAddDeviceTests.testNotSaveIconCrossAddDevice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ProfileScheduleWorkTests">
+    <configuration name="ProfileAddDeviceTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -379,15 +402,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileAddDeviceTests" />
-      <option name="METHOD_NAME" value="testNotSaveIconCrossAddDevice" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileResumeTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -396,7 +417,27 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileResumeTests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileAddDeviceTests" />
+      <option name="METHOD_NAME" value="testNotSaveButtonCloseAddDevice" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ql.tt.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileAddDeviceTests" />
+      <option name="METHOD_NAME" value="testOpeningWindowAddDevice" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -419,7 +460,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="ProfileScheduleWorkTests.testOpeningWindowScheduleWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -429,25 +470,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileScheduleWorkTests" />
-      <option name="METHOD_NAME" value="testNotSaveButtonCloseSchedulWork" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileScheduleWorkTests.testNotSaveIconCrossSchedulWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ql.tt.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileScheduleWorkTests" />
-      <option name="METHOD_NAME" value="testNotSaveIconCrossSchedulWork" />
+      <option name="METHOD_NAME" value="testOpeningWindowScheduleWork" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -456,19 +479,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="TestNG.ProfileResumeTests" />
-      <item itemvalue="TestNG.ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" />
-      <item itemvalue="TestNG.ProfileScheduleWorkTests.testNotSaveIconCrossSchedulWork" />
+      <item itemvalue="TestNG.ProfileAddDeviceTests" />
+      <item itemvalue="TestNG.ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" />
+      <item itemvalue="TestNG.ProfileAddDeviceTests.testOpeningWindowAddDevice" />
+      <item itemvalue="TestNG.ProfileScheduleWorkTests.testOpeningWindowScheduleWork" />
       <item itemvalue="TestNG.ProfileScheduleWorkTests" />
-      <item itemvalue="TestNG.ProfileAddDeviceTests.testNotSaveIconCrossAddDevice" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.ProfileAddDeviceTests.testNotSaveIconCrossAddDevice" />
         <item itemvalue="TestNG.ProfileScheduleWorkTests" />
-        <item itemvalue="TestNG.ProfileScheduleWorkTests.testNotSaveIconCrossSchedulWork" />
-        <item itemvalue="TestNG.ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" />
-        <item itemvalue="TestNG.ProfileResumeTests" />
+        <item itemvalue="TestNG.ProfileScheduleWorkTests.testOpeningWindowScheduleWork" />
+        <item itemvalue="TestNG.ProfileAddDeviceTests" />
+        <item itemvalue="TestNG.ProfileAddDeviceTests.testOpeningWindowAddDevice" />
+        <item itemvalue="TestNG.ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" />
       </list>
     </recent_temporary>
   </component>
@@ -494,48 +517,50 @@
       <workItem from="1539182272915" duration="78000" />
       <workItem from="1539182359326" duration="4000" />
       <workItem from="1539182372155" duration="1695000" />
+      <workItem from="1539242144165" duration="142000" />
+      <workItem from="1539242304546" duration="8077000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProfileResumeTests - 2018.10.10 at 16h 31m 11s.xml">
-      <configuration name="ProfileResumeTests" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testNotSaveButtonCloseAddDevice - 2018.10.11 at 12h 29m 01s.xml">
+      <configuration name="ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileResumeTests - 2018.10.10 at 16h 35m 40s.xml">
-      <configuration name="ProfileResumeTests" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testNotSaveButtonCloseAddDevice - 2018.10.11 at 12h 30m 36s.xml">
+      <configuration name="ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveButtonCloseSchedulWork - 2018.10.10 at 16h 52m 41s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests - 2018.10.11 at 12h 31m 38s.xml">
+      <configuration name="ProfileAddDeviceTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveButtonCloseSchedulWork - 2018.10.10 at 16h 53m 55s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests - 2018.10.11 at 12h 32m 44s.xml">
+      <configuration name="ProfileAddDeviceTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveButtonCloseSchedulWork - 2018.10.10 at 16h 56m 19s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.11 at 12h 33m 51s.xml">
+      <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveButtonCloseSchedulWork - 2018.10.10 at 16h 58m 44s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.11 at 12h 36m 10s.xml">
+      <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveButtonCloseSchedulWork - 2018.10.10 at 16h 59m 10s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveButtonCloseSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.11 at 12h 38m 42s.xml">
+      <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testNotSaveIconCrossSchedulWork - 2018.10.10 at 17h 03m 35s.xml">
-      <configuration name="ProfileScheduleWorkTests.testNotSaveIconCrossSchedulWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests - 2018.10.11 at 12h 40m 00s.xml">
+      <configuration name="ProfileAddDeviceTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests - 2018.10.10 at 17h 07m 26s.xml">
+    <history-entry file="ProfileScheduleWorkTests_testOpeningWindowScheduleWork - 2018.10.11 at 12h 45m 11s.xml">
+      <configuration name="ProfileScheduleWorkTests.testOpeningWindowScheduleWork" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileScheduleWorkTests - 2018.10.11 at 12h 46m 00s.xml">
       <configuration name="ProfileScheduleWorkTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="ProfileAddDeviceTests_testNotSaveIconCrossAddDevice - 2018.10.10 at 17h 36m 37s.xml">
-      <configuration name="ProfileAddDeviceTests.testNotSaveIconCrossAddDevice" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91363000" />
+    <option name="totallyTimeSpent" value="99653000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="668" y="39" width="1336" height="872" extended-state="0" />
+    <frame x="600" y="63" width="1319" height="872" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19938177" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20830071" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -550,7 +575,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32948717" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32948717" />
@@ -605,6 +630,132 @@
           <line>29</line>
           <properties />
           <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>145</line>
+          <properties />
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>146</line>
+          <properties />
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>184</line>
+          <properties />
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>185</line>
+          <properties />
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>186</line>
+          <properties />
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>187</line>
+          <properties />
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>183</line>
+          <properties />
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>182</line>
+          <properties />
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>181</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
+          <line>180</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="139" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="141" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="142" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>18</line>
+          <properties />
+          <option name="timeStamp" value="144" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="145" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>16</line>
+          <properties />
+          <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>15</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
+          <line>14</line>
+          <properties />
+          <option name="timeStamp" value="148" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -675,13 +826,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/URL.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -690,13 +834,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/methods/ProfileMethods.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileЬethods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileЬethods.java" />
     <entry file="uml://JavaScript-modules-diagram//Users/sergejtambolskij/Desktop/РАБОТА/sandbox/src/test/java/ru/ql/tt/methods">
       <provider selected="true" editor-type-id="UmlEditorProvider">
         <state>
@@ -710,6 +848,7 @@
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
@@ -722,7 +861,7 @@
           <nodes />
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="81.5" y="88.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="82.0" y="89.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>Problems</SCOPE>
@@ -740,11 +879,12 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="70.0" y="14.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="70.0" y="15.0" />
           <SelectedNodes />
           <Categories>
             <Category>Test dependencies</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -777,7 +917,7 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.9300106044538706" x="739.1311288483466" y="91.0" />
+          <settings layout="Hierarchic Group" zoom="0.9300106044538706" x="739.0" y="91.0" />
           <SelectedNodes />
           <Categories />
           <SCOPE>All</SCOPE>
@@ -800,20 +940,25 @@
     <entry file="file://$PROJECT_DIR$/sandbox.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestLisner.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1440">
+          <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+        <state relative-caret-position="195">
+          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -830,10 +975,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
+        <state relative-caret-position="371">
+          <caret line="70" column="46" lean-forward="true" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#1008#1009#0" expanded="true" />
+            <element signature="e#2021#2059#0" expanded="true" />
+            <element signature="e#2238#2276#0" expanded="true" />
+            <element signature="e#2406#2407#0" expanded="true" />
+            <element signature="e#2436#2437#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#525#526#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="85" column="125" selection-start-line="85" selection-start-column="125" selection-end-line="85" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -842,52 +1049,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="96" column="20" lean-forward="true" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="97" column="102" selection-start-line="97" selection-start-column="102" selection-end-line="97" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="250" column="29" selection-start-line="250" selection-start-column="29" selection-end-line="250" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="93" selection-start-line="9" selection-start-column="93" selection-end-line="9" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/testNG.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
         </state>
       </provider>
     </entry>
