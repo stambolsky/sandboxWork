@@ -1,13 +1,33 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="Suite Sandbox" verbose="10" >
-    <test name="TT" >
+<suite name="Suite Sandbox" verbose="1" group-by-instances="true" >
+    <test name="LoginTest" >
         <classes>
             <class name="ru.ql.tt.tests.LoginTest" />
+        </classes>
+    </test>
+    <test name="ProfileAddDeviceTests">
+        <classes>
             <class name="ru.ql.tt.tests.ProfileAddDeviceTests" />
+        </classes>
+    </test>
+    <test name="ProfileContactTests">
+        <classes>
             <class name="ru.ql.tt.tests.ProfileContactTests" />
+        </classes>
+    </test>
+    <test name="ProfileCreateResumeTests">
+        <classes>
             <class name="ru.ql.tt.tests.ProfileCreateResumeTests" />
+        </classes>
+    </test>
+    <test name="ProfileResumeTests">
+        <classes>
             <class name="ru.ql.tt.tests.ProfileResumeTests" />
+        </classes>
+    </test>
+    <test name="ProfileScheduleWorkTests">
+        <classes>
             <class name="ru.ql.tt.tests.ProfileScheduleWorkTests" />
         </classes>
     </test>

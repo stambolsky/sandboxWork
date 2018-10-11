@@ -11,11 +11,24 @@
     <properties>
         <aspectj.version>1.9.1</aspectj.version>
         <allure.version>2.7.0</allure.version>
-
-        <browser>firefox</browser>
+        <browser>chrome</browser>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jcenter</id>
+            <name>bintray</name>
+            <url>http://jcenter.bintray.com</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.10</version>
+            <scope>test</scope>
+        </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
