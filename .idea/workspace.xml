@@ -2,13 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/AddDevaicePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileContactsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfilePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePaga.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileShedulePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/UtilityMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/geckodriver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/allure.properties" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,7 +66,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="18" />
-          <entry key="java" value="10139" />
+          <entry key="java" value="10504" />
           <entry key="properties" value="15" />
           <entry key="testNG-login" value="30" />
           <entry key="xml" value="64" />
@@ -63,7 +74,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10139" />
+          <entry key="JAVA" value="10504" />
           <entry key="PLAIN_TEXT" value="18" />
           <entry key="Properties" value="15" />
           <entry key="XML" value="94" />
@@ -76,21 +87,21 @@
           <entry key="appmanager" value="1" />
           <entry key="class" value="7" />
           <entry key="iml" value="4" />
-          <entry key="java" value="53" />
-          <entry key="properties" value="9" />
+          <entry key="java" value="108" />
+          <entry key="properties" value="10" />
           <entry key="testNG-login" value="1" />
           <entry key="tt" value="1" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="7" />
           <entry key="IDEA_MODULE" value="4" />
-          <entry key="JAVA" value="53" />
-          <entry key="Properties" value="9" />
+          <entry key="JAVA" value="108" />
+          <entry key="Properties" value="10" />
           <entry key="UML" value="5" />
-          <entry key="XML" value="13" />
+          <entry key="XML" value="14" />
         </counts>
       </usages-collector>
     </session>
@@ -104,72 +115,11 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
-              <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+              <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2953#2954#0" expanded="true" />
-                <element signature="e#2978#2979#0" expanded="true" />
-                <element signature="e#4102#4103#0" expanded="true" />
-                <element signature="e#4173#4174#0" expanded="true" />
-                <element signature="e#4996#4997#0" expanded="true" />
-                <element signature="e#5047#5048#0" expanded="true" />
-                <element signature="e#5365#5366#0" expanded="true" />
-                <element signature="e#5429#5430#0" expanded="true" />
-                <element signature="e#5472#5473#0" expanded="true" />
-                <element signature="e#5532#5533#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#579#580#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#810#811#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#625#626#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -178,8 +128,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
+            <state relative-caret-position="525">
+              <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -188,37 +138,103 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/URL.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="11" selection-start-line="1" selection-end-line="1" selection-end-column="11" />
+            <state relative-caret-position="243">
+              <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="82">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/allure.properties">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="46" selection-start-column="46" selection-end-column="46" />
+            <state relative-caret-position="325">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/resources/testNG.xml">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileShedulePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+            <state relative-caret-position="195">
+              <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePaga.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-350">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfilePage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2699#2700#0" expanded="true" />
+                <element signature="e#2722#2723#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/LoginPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#594#595#0" expanded="true" />
+                <element signature="e#617#618#0" expanded="true" />
+                <element signature="e#1153#1154#0" expanded="true" />
+                <element signature="e#1221#1222#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,6 +259,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -260,22 +277,29 @@
         <option value="$PROJECT_DIR$/src/test/resources/URL.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/XpathBase.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testNG-login" />
         <option value="$PROJECT_DIR$/testNG.xml" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileЬethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/methods/ProfileMethods.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestLisner.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" />
         <option value="$PROJECT_DIR$/src/test/resources/testNG.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePaga.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileContactsPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileShedulePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfilePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/UtilityMethods.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/AddDevaicePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/LoginPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java" />
       </list>
     </option>
@@ -295,13 +319,35 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sandbox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sandbox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sandbox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="allure" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="sandbox" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="clean" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="792" />
-    <option name="y" value="70" />
+    <option name="x" value="779" />
+    <option name="y" value="30" />
     <option name="width" value="1128" />
     <option name="height" value="872" />
   </component>
@@ -361,6 +407,15 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="tt" type="462c0819:PsiDirectoryNode" />
+              <item name="PageBase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="sandbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="sandbox" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tt" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -380,7 +435,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540315224017" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540322179023" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -390,14 +445,124 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/test/resources" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="ru.ql.tt.appmanager" />
       <recent name="ru.ql.tt.methods" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.gitignore</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -411,40 +576,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
-    <configuration name="LoginTest" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ql.tt.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.LoginTest" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileAddDeviceTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ql.tt.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileAddDeviceTests" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProfileContactTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.ProfileScheduleWorkTests">
+    <configuration name="ProfileContactTests.testNotSaveButtonCloseContacts" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <module name="sandbox" />
       <extension name="coverage">
         <pattern>
@@ -454,6 +587,58 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
       <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileContactTests" />
+      <option name="METHOD_NAME" value="testNotSaveButtonCloseContacts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileContactTests.testNotSaveIconCrossContacts" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ql.tt.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileContactTests" />
+      <option name="METHOD_NAME" value="testNotSaveIconCrossContacts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileCreateResumeTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ql.tt.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileCreateResumeTests" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProfileResumeTests" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.ql.tt.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
+      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileResumeTests" />
       <properties />
       <listeners />
       <method v="2">
@@ -476,38 +661,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProfileScheduleWorkTests.testOpeningWindowScheduleWork" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="sandbox" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.ql.tt.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.ql.tt.tests" />
-      <option name="MAIN_CLASS_NAME" value="ru.ql.tt.tests.ProfileScheduleWorkTests" />
-      <option name="METHOD_NAME" value="testOpeningWindowScheduleWork" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="TestNG.ProfileAddDeviceTests" />
-      <item itemvalue="TestNG.ProfileScheduleWorkTests.testOpeningWindowScheduleWork" />
+      <item itemvalue="TestNG.ProfileContactTests.testNotSaveIconCrossContacts" />
+      <item itemvalue="TestNG.ProfileContactTests.testNotSaveButtonCloseContacts" />
+      <item itemvalue="TestNG.ProfileCreateResumeTests" />
+      <item itemvalue="TestNG.ProfileResumeTests" />
       <item itemvalue="TestNG.ProfileScheduleWorkTests" />
-      <item itemvalue="TestNG.ProfileContactTests" />
-      <item itemvalue="TestNG.LoginTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
-        <item itemvalue="TestNG.ProfileContactTests" />
         <item itemvalue="TestNG.ProfileScheduleWorkTests" />
-        <item itemvalue="TestNG.ProfileScheduleWorkTests.testOpeningWindowScheduleWork" />
-        <item itemvalue="TestNG.ProfileAddDeviceTests" />
+        <item itemvalue="TestNG.ProfileResumeTests" />
+        <item itemvalue="TestNG.ProfileCreateResumeTests" />
+        <item itemvalue="TestNG.ProfileContactTests.testNotSaveButtonCloseContacts" />
+        <item itemvalue="TestNG.ProfileContactTests.testNotSaveIconCrossContacts" />
       </list>
     </recent_temporary>
   </component>
@@ -563,48 +730,47 @@
       <workItem from="1540141033466" duration="437000" />
       <workItem from="1540191566928" duration="574000" />
       <workItem from="1540192357331" duration="268000" />
-      <workItem from="1540313831495" duration="1202000" />
+      <workItem from="1540313831495" duration="8304000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.11 at 12h 36m 10s.xml">
+    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.23 at 22h 11m 38s.xml">
       <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileAddDeviceTests_testOpeningWindowAddDevice - 2018.10.11 at 12h 38m 42s.xml">
-      <configuration name="ProfileAddDeviceTests.testOpeningWindowAddDevice" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testNotSaveButtonCloseAddDevice - 2018.10.23 at 22h 12m 12s.xml">
+      <configuration name="ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileAddDeviceTests - 2018.10.11 at 12h 40m 00s.xml">
-      <configuration name="ProfileAddDeviceTests" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testNotSaveButtonCloseAddDevice - 2018.10.23 at 22h 12m 53s.xml">
+      <configuration name="ProfileAddDeviceTests.testNotSaveButtonCloseAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests_testOpeningWindowScheduleWork - 2018.10.11 at 12h 45m 11s.xml">
-      <configuration name="ProfileScheduleWorkTests.testOpeningWindowScheduleWork" configurationId="TestNG" />
+    <history-entry file="ProfileAddDeviceTests_testNotSaveIconCrossAddDevice - 2018.10.23 at 22h 13m 28s.xml">
+      <configuration name="ProfileAddDeviceTests.testNotSaveIconCrossAddDevice" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="ProfileScheduleWorkTests - 2018.10.11 at 12h 46m 00s.xml">
+    <history-entry file="ProfileContactTests - 2018.10.23 at 22h 14m 05s.xml">
+      <configuration name="ProfileContactTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileContactTests_testNotSaveIconCrossContacts - 2018.10.23 at 22h 14m 35s.xml">
+      <configuration name="ProfileContactTests.testNotSaveIconCrossContacts" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileContactTests_testNotSaveButtonCloseContacts - 2018.10.23 at 22h 15m 04s.xml">
+      <configuration name="ProfileContactTests.testNotSaveButtonCloseContacts" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileCreateResumeTests - 2018.10.23 at 22h 15m 29s.xml">
+      <configuration name="ProfileCreateResumeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileResumeTests - 2018.10.23 at 22h 16m 15s.xml">
+      <configuration name="ProfileResumeTests" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="ProfileScheduleWorkTests - 2018.10.23 at 22h 16m 58s.xml">
       <configuration name="ProfileScheduleWorkTests" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2018.10.11 at 18h 53m 01s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2018.10.23 at 20h 01m 26s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2018.10.23 at 20h 14m 01s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2018.10.23 at 20h 14m 49s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="LoginTest - 2018.10.23 at 20h 17m 33s.xml">
-      <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105715000" />
+    <option name="totallyTimeSpent" value="112817000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="792" y="70" width="1128" height="872" extended-state="0" />
-    <editor active="true" />
+    <frame x="779" y="30" width="1128" height="872" extended-state="0" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7064102" visible="true" weight="0.2587477" />
       <window_info id="Structure" order="1" sideWeight="0.29358974" side_tool="true" weight="0.40331492" />
@@ -624,7 +790,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32948717" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32948717" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.20641026" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32820514" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -641,170 +807,34 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>13</line>
-          <properties />
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>24</line>
-          <properties />
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>25</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java</url>
-          <line>26</line>
-          <properties />
-          <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="125" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>150</line>
-          <properties />
-          <option name="timeStamp" value="126" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>151</line>
-          <properties />
-          <option name="timeStamp" value="127" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>189</line>
-          <properties />
-          <option name="timeStamp" value="128" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>190</line>
-          <properties />
-          <option name="timeStamp" value="129" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>191</line>
-          <properties />
-          <option name="timeStamp" value="130" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>192</line>
-          <properties />
-          <option name="timeStamp" value="131" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>188</line>
-          <properties />
-          <option name="timeStamp" value="132" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>187</line>
-          <properties />
-          <option name="timeStamp" value="133" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>186</line>
-          <properties />
-          <option name="timeStamp" value="134" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java</url>
-          <line>185</line>
-          <properties />
-          <option name="timeStamp" value="135" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="138" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>23</line>
-          <properties />
-          <option name="timeStamp" value="139" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>22</line>
-          <properties />
-          <option name="timeStamp" value="140" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>21</line>
-          <properties />
-          <option name="timeStamp" value="141" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>20</line>
-          <properties />
-          <option name="timeStamp" value="142" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="143" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>18</line>
-          <properties />
-          <option name="timeStamp" value="144" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>17</line>
-          <properties />
-          <option name="timeStamp" value="145" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>16</line>
-          <properties />
-          <option name="timeStamp" value="146" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>15</line>
-          <properties />
-          <option name="timeStamp" value="147" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java</url>
-          <line>14</line>
-          <properties />
-          <option name="timeStamp" value="148" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -942,23 +972,6 @@
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestLisner.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestListener.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/HelperBase.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sandbox.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -969,61 +982,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="80" column="14" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#579#580#0" expanded="true" />
-            <element signature="e#633#634#0" expanded="true" />
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#810#811#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="16" column="34" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -1039,13 +1002,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/allure.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1053,41 +1009,193 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/authorization.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="8" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/testNG.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="190">
           <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileContactsPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="22" column="32" lean-forward="true" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1324#1325#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/XpathElementsBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/UtilityMethods.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="77" column="29" lean-forward="true" selection-start-line="77" selection-start-column="29" selection-end-line="77" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1780#1781#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2094#2095#0" expanded="true" />
+            <element signature="e#2144#2145#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2648#2649#0" expanded="true" />
+            <element signature="e#2673#2674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/AddDevaicePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="70">
+          <caret line="33" column="4" selection-start-line="33" selection-start-column="4" selection-end-line="33" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#594#595#0" expanded="true" />
+            <element signature="e#617#618#0" expanded="true" />
+            <element signature="e#1153#1154#0" expanded="true" />
+            <element signature="e#1221#1222#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfilePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="47" column="24" lean-forward="true" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2699#2700#0" expanded="true" />
+            <element signature="e#2722#2723#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePaga.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileShedulePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="20" lean-forward="true" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileAddDeviceTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="23" lean-forward="true" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileContactTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileCreateResumeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="16" lean-forward="true" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <caret line="13" column="9" lean-forward="true" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#525#526#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#625#626#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileScheduleWorkTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="39" column="23" lean-forward="true" selection-start-line="39" selection-start-column="23" selection-end-line="39" selection-end-column="23" />
+        <state relative-caret-position="82">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2953#2954#0" expanded="true" />
-            <element signature="e#2978#2979#0" expanded="true" />
-            <element signature="e#4102#4103#0" expanded="true" />
-            <element signature="e#4173#4174#0" expanded="true" />
-            <element signature="e#4996#4997#0" expanded="true" />
-            <element signature="e#5047#5048#0" expanded="true" />
-            <element signature="e#5365#5366#0" expanded="true" />
-            <element signature="e#5429#5430#0" expanded="true" />
-            <element signature="e#5472#5473#0" expanded="true" />
-            <element signature="e#5532#5533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
