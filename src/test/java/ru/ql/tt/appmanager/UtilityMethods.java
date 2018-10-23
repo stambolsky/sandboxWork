@@ -12,25 +12,27 @@ import static ru.ql.tt.appmanager.ApplicationManager.properties;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 
 public class UtilityMethods {
-
+    private static String authProperties = "src/test/resources/authorization.properties";
+    private static String urlProperties = "src/test/resources/URL.properties";
+    
     public static void init() throws IOException {
         open();
-        properties.load(new FileReader(new File("src/test/resources/authorization.properties")));
+        properties.load(new FileReader(new File(authProperties)));
         login(properties.getProperty("login"), properties.getProperty("password"));
     }
 
     private static void open() throws IOException {
-        properties.load(new FileReader(new File("src/test/resources/URL.properties")));
+        properties.load(new FileReader(new File(urlProperties)));
         wd.get(properties.getProperty("LoginPage"));
     }
 
     public static String getLogin() throws IOException {
-        properties.load(new FileReader(new File("src/test/resources/authorization.properties")));
+        properties.load(new FileReader(new File(authProperties)));
         return properties.getProperty("login");
     }
 
     public static String getUrlProfilePage() throws IOException {
-        properties.load(new FileReader(new File("src/test/resources/URL.properties")));
+        properties.load(new FileReader(new File(urlProperties)));
         return properties.getProperty("ProfilePage");
     }
 
