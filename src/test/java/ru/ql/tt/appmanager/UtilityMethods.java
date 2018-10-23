@@ -2,8 +2,10 @@ package ru.ql.tt.appmanager;
 
 import org.openqa.selenium.By;
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.NoSuchElementException;
 import java.util.Set;
 import static ru.ql.tt.PageBase.LoginPage.AVATARCOVER;
 import static ru.ql.tt.PageBase.LoginPage.LINK_PROFILE;
@@ -14,25 +16,41 @@ import static ru.ql.tt.appmanager.ApplicationManager.wd;
 public class UtilityMethods {
     private static String authProperties = "src/test/resources/authorization.properties";
     private static String urlProperties = "src/test/resources/URL.properties";
-    
-    public static void init() throws IOException {
+
+    public static void init() {
         open();
-        properties.load(new FileReader(new File(authProperties)));
+        try {
+            properties.load(new FileReader(new File(authProperties)));
+        } catch (NoSuchElementException | IOException e) {
+            e.printStackTrace();
+        }
         login(properties.getProperty("login"), properties.getProperty("password"));
     }
 
-    private static void open() throws IOException {
-        properties.load(new FileReader(new File(urlProperties)));
+    private static void open() {
+        try {
+            properties.load(new FileReader(new File(urlProperties)));
+        } catch (NoSuchElementException | IOException e) {
+            e.printStackTrace();
+        }
         wd.get(properties.getProperty("LoginPage"));
     }
 
-    public static String getLogin() throws IOException {
-        properties.load(new FileReader(new File(authProperties)));
+    public static String getLogin() {
+        try {
+            properties.load(new FileReader(new File(authProperties)));
+        } catch (NoSuchElementException | IOException e) {
+            e.printStackTrace();
+        }
         return properties.getProperty("login");
     }
 
-    public static String getUrlProfilePage() throws IOException {
-        properties.load(new FileReader(new File(urlProperties)));
+    public static String getUrlProfilePage() {
+        try {
+            properties.load(new FileReader(new File(urlProperties)));
+        } catch (NoSuchElementException | IOException e) {
+            e.printStackTrace();
+        }
         return properties.getProperty("ProfilePage");
     }
 
@@ -41,18 +59,26 @@ public class UtilityMethods {
         wd.findElement(By.xpath(LINK_PROFILE)).click();
     }
 
-    public static void clickWaitElement(String s, int i) throws InterruptedException {
+    public static void clickWaitElement(String s, int i) {
         wd.findElement(By.xpath(s)).click();
-        Thread.sleep(i);
+        try {
+            Thread.sleep(i);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void findClickElement(String s) {
         wd.findElement(By.xpath(s)).click();
     }
 
-    public static void refreshPage() throws InterruptedException {
+    public static void refreshPage() {
         wd.navigate().refresh();
-        Thread.sleep(5000);
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public static void sendData(String element, String text) {

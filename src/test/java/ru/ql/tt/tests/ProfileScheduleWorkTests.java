@@ -7,7 +7,7 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_SCHEDULE_WORK_BUTTON_EDIT;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_TABLE_TIME_MONDAY;
-import static ru.ql.tt.PageBase.ProfileShedulePage.*;
+import static ru.ql.tt.PageBase.ProfileSchedulePage.*;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.clickWaitElement;
 import static ru.ql.tt.appmanager.UtilityMethods.findGetText;
@@ -16,7 +16,7 @@ public class ProfileScheduleWorkTests extends TestBase {
 
     // 2. Изменение графика работы
     @Test
-    public void testOpeningWindowScheduleWork() throws InterruptedException {
+    public void testOpeningWindowScheduleWork() {
         clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
         assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_EDIT_SCHEDULE_WORK)).isDisplayed());
         assertEquals(findGetText(MODAL_WINDOW_EDIT_TITLE_SCHEDULE_WORK),"Изменение графика работы");
@@ -31,13 +31,13 @@ public class ProfileScheduleWorkTests extends TestBase {
 
     //Кнопка “Закрыть без сохранения”.
     @Test
-    public void testNotSaveButtonCloseSchedulWork() throws InterruptedException {
+    public void testNotSaveButtonCloseScheduleWork() {
         checkNotSaveFormScheduleWork(MODAL_SCHEDULE_WORK_BUTTON_CLOSE_NOT_SAVE);
     }
 
     //Кнопка “Крестик”.
     @Test
-    public void testNotSaveIconCrossSchedulWork() throws InterruptedException {
+    public void testNotSaveIconCrossScheduleWork() {
         checkNotSaveFormScheduleWork(MODAL_WINDOW_EDIT_ICON_CROSS);
     }
 

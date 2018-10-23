@@ -9,7 +9,7 @@ import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
 
 
-public class ProfileResumePaga {
+public class ProfileResumePage {
 
     public static String MODAL_WINDOW_EDIT_RESUME = "//div[@id='popup-edit-resume']//div[@class='modal-content']";
     public static String MODAL_WINDOW_EDIT_TITLE = "//div[@id='popup-edit-resume']//h5[@id='exampleModalLabel']";
@@ -19,11 +19,11 @@ public class ProfileResumePaga {
     public static String MODAL_RESUME_EDIT_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-resume']//button[contains(text(),'Закрыть без сохранения')]";
     public static String MODAL_RESUME_EDIT_ICON_CROSS = "//div[@id='popup-edit-resume']//button[@class='close']";
 
-    public ProfileResumePaga() {
+    public ProfileResumePage() {
         super();
     }
 
-    public static void checkNotSaveFormResume(String modalResumeEditIconCross) throws InterruptedException {
+    public static void checkNotSaveFormResume(String modalResumeEditIconCross) {
         clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 1000);
         wd.findElement(By.xpath(MODAL_WINDOW_EDIT_TEXTAREA)).clear();
         sendData(MODAL_WINDOW_EDIT_TEXTAREA, "Финансист");

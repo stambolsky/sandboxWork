@@ -20,9 +20,9 @@ public class ProfileCreateResumeTests extends TestBase {
         switchWindow(idWindow);
         String titleNewWindows = wd.getTitle();
         assertEquals(titleNewWindows, "Первая страница");
-        String firstname = findGetText(WINDOW_RESUME_FIRST_NAME);
-        String lastname = findGetText(WINDOW_RESUME_LAST_NAME);
-        String name = lastname + " " + firstname;
+        String firstName = findGetText(WINDOW_RESUME_FIRST_NAME);
+        String lastName = findGetText(WINDOW_RESUME_LAST_NAME);
+        String name = lastName + " " + firstName;
         String place = findGetText(WINDOW_RESUME_PLACE);
         wd.close();
         wd.switchTo().window(idWindow);

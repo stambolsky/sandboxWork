@@ -12,7 +12,7 @@ public class ProfileAddDeviceTests extends TestBase {
 
     // 4. Добавление нового устройства.
     @Test
-    public void testOpeningWindowAddDevice() throws InterruptedException {
+    public void testOpeningWindowAddDevice() {
         clickWaitElement(BUTTON_ADD_DEVICES, 500);
         assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_DEVICE)).isDisplayed());
         assertEquals(findGetText(TITLE_WINDOW_DEVICE),"Добавление нового устройства");
@@ -29,13 +29,13 @@ public class ProfileAddDeviceTests extends TestBase {
 
     //Кнопка “Закрыть без сохранения”.
     @Test
-    public void testNotSaveButtonCloseAddDevice() throws InterruptedException {
+    public void testNotSaveButtonCloseAddDevice() {
         checkNotSaveFormDevices(EDIT_WINDOW_BUTTON_CLOSE_NOT_SAVE);
     }
 
     //Кнопка “Крестик”.
     @Test
-    public void testNotSaveIconCrossAddDevice() throws InterruptedException {
+    public void testNotSaveIconCrossAddDevice() {
         checkNotSaveFormDevices(EDIT_WINDOW_ICON_CROSS);
     }
 

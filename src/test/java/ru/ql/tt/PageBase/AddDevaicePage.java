@@ -31,7 +31,7 @@ public class AddDevaicePage {
         super();
     }
 
-    private static void addDevice() throws InterruptedException {
+    private static void addDevice() {
         clickWaitElement(BUTTON_ADD_DEVICES, 500);
         findClickElement(TYPE_PC);
         findClickElement(TYPE_OS_LINUX);
@@ -39,7 +39,7 @@ public class AddDevaicePage {
         refreshPage();
     }
 
-    public static void checkNotSaveFormDevices(String button) throws InterruptedException {
+    public static void checkNotSaveFormDevices(String button) {
         addDevice();
         String typeDevice = wd.findElement(By.xpath(TABLE_FIELD_TYPE_PC)).getAttribute("data-type");
         clickWaitElement(TABLE_ICON_EDIT, 500);

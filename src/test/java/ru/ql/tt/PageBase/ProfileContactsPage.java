@@ -24,7 +24,7 @@ public class ProfileContactsPage {
         super();
     }
 
-    public static void checkNotSaveFormContacts(String modalEditButtonCloseNotSave) throws InterruptedException {
+    public static void checkNotSaveFormContacts(String modalEditButtonCloseNotSave) {
         clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
         wd.findElement(By.xpath(MODAL_EDIT_EMAIL)).clear();
         sendData(MODAL_EDIT_EMAIL, "test@test.test");
@@ -37,7 +37,7 @@ public class ProfileContactsPage {
         clickWaitElement(MODAL_EDIT_BUTTON_CLOSE_NOT_SAVE, 2000);
     }
 
-    public static void changeContactsInfo(String phone, String skype) throws InterruptedException {
+    public static void changeContactsInfo(String phone, String skype) {
         clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
         assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_EDIT_CONTACTS)).isDisplayed());
         Assert.assertEquals(findGetText(TITLE_MODAL_WINDOW_EDIT_CONTACTS),"Изменение контактной информации");

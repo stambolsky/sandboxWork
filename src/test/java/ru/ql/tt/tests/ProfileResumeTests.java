@@ -7,14 +7,14 @@ import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_RESUME_BUTTON_EDIT;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_RESUME_SHORT_RESUME;
-import static ru.ql.tt.PageBase.ProfileResumePaga.*;
+import static ru.ql.tt.PageBase.ProfileResumePage.*;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
 
 public class ProfileResumeTests extends TestBase {
 
     @Test
-    public void testOpeningWindowResume() throws InterruptedException {
+    public void testOpeningWindowResume() {
         clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 500);
         assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_EDIT_RESUME)).isDisplayed());
         assertEquals(findGetText(MODAL_WINDOW_EDIT_TITLE),"Изменение краткого резюме сотрудника");
@@ -30,13 +30,13 @@ public class ProfileResumeTests extends TestBase {
 
     //Кнопка “Закрыть без сохранения”.
     @Test
-    public void testNotSaveButtonCloseResume() throws InterruptedException {
+    public void testNotSaveButtonCloseResume() {
         checkNotSaveFormResume(MODAL_RESUME_EDIT_BUTTON_CLOSE_NOT_SAVE);
     }
 
     //Кнопка “Крестик”.
     @Test
-    public void testNotSaveIconCrossResume() throws InterruptedException {
+    public void testNotSaveIconCrossResume() {
         checkNotSaveFormResume(MODAL_RESUME_EDIT_ICON_CROSS);
     }
 

@@ -39,7 +39,7 @@ public class ProfilePage {
     }
 
     public static boolean allElementsBlock() {
-        String[] elements = {HEADER, LOGO, BLOCK_MENU, TITLE_PROFILE, BLOCK_RESUME, BLOCK_SCHEDULE_WORK
+        String[] elements = new String[]{HEADER, LOGO, BLOCK_MENU, TITLE_PROFILE, BLOCK_RESUME, BLOCK_SCHEDULE_WORK
                 ,BLOCK_CONTACTS,BLOCK_DEVICES};
         return allElementInBlock(elements);
     }

@@ -11,7 +11,7 @@ import static ru.ql.tt.appmanager.UtilityMethods.clickWaitElement;
 import static ru.ql.tt.appmanager.UtilityMethods.findClickElement;
 import static ru.ql.tt.appmanager.UtilityMethods.findGetText;
 
-public class ProfileShedulePage {
+public class ProfileSchedulePage {
 
     public static String MODAL_WINDOW_EDIT_SCHEDULE_WORK = "//div[@id='popup-edit-schedule']//div[@class='modal-content']";
     public static String MODAL_WINDOW_EDIT_TITLE_SCHEDULE_WORK = "//div[@id='popup-edit-schedule']//h5";
@@ -23,11 +23,11 @@ public class ProfileShedulePage {
     public static String MODAL_SCHEDULE_WORK_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-schedule']//button[contains(text(),'Закрыть без сохранения')]";
     public static String MODAL_WINDOW_EDIT_ICON_CROSS = "//div[@id='popup-edit-schedule']//div[@class='modal-header']//button";
 
-    public ProfileShedulePage() {
+    public ProfileSchedulePage() {
         super();
     }
 
-    public static void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) throws InterruptedException {
+    public static void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) {
         clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
         findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
         findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
