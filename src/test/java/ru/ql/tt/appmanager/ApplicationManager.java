@@ -1,5 +1,8 @@
 package ru.ql.tt.appmanager;
 
+import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.FirefoxDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -29,10 +32,12 @@ public class ApplicationManager {
         properties = new Properties();
     }
 
-    public void checkBrowser() {
+    public void createBrowser() {
         if (browser.equals(BrowserType.FIREFOX)) {
-            wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));
+            WebDriverManager.firefoxdriver().setup();
+            wd = new FirefoxDriver();
         } else if (browser.equals(BrowserType.CHROME)) {
+            WebDriverManager.chromedriver().setup();
             wd = new ChromeDriver();
         }
         wd.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
