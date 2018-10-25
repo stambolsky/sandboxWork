@@ -7,7 +7,6 @@ import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_CONTACTS_FIELD_EMAIL;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
-import static ru.ql.tt.tests.TestBase.app;
 
 public class ProfileContactsPage {
 

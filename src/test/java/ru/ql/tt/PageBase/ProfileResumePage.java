@@ -7,7 +7,6 @@ import org.testng.Assert;
 import static ru.ql.tt.PageBase.ProfilePage.*;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
-import static ru.ql.tt.tests.TestBase.app;
 
 
 public class ProfileResumePage {

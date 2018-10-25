@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
-import static ru.ql.tt.PageBase.AddDevaicePage.BUTTON_ADD_DEVICES;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_RESUME_BUTTON_EDIT;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_RESUME_SHORT_RESUME;
 import static ru.ql.tt.PageBase.ProfileResumePage.*;

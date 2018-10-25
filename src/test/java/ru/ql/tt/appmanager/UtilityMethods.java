@@ -3,9 +3,7 @@ package ru.ql.tt.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.NoSuchElementException;
@@ -15,7 +13,6 @@ import static ru.ql.tt.PageBase.LoginPage.LINK_PROFILE;
 import static ru.ql.tt.PageBase.LoginPage.login;
 import static ru.ql.tt.appmanager.ApplicationManager.properties;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
-import static ru.ql.tt.tests.TestBase.app;
 
 public class UtilityMethods {
     private static String authProperties = "src/test/resources/authorization.properties";

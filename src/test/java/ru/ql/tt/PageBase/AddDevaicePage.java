@@ -1,14 +1,9 @@
 package ru.ql.tt.PageBase;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import ru.ql.tt.appmanager.UtilityMethods;
-
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
-import static ru.ql.tt.tests.TestBase.app;
 
 public class AddDevaicePage {
 
