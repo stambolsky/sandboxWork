@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/AddDevaicePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/AddDevaicePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileContactsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileContactsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileResumePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileSchedulePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/PageBase/ProfileSchedulePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/UtilityMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/appmanager/UtilityMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/ProfileResumeTests.java" afterDir="false" />
-    </list>
+    <list default="true" id="6e27d339-f866-4f87-886a-cfb72739816a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,7 +33,7 @@
     <session id="-1703689342">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="43" />
+          <entry key="project.closed" value="44" />
           <entry key="project.open.time.0" value="24" />
           <entry key="project.open.time.1" value="13" />
           <entry key="project.open.time.10" value="1" />
@@ -172,8 +164,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+            <state relative-caret-position="270">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -433,7 +425,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540496074262" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540496323761" />
     <property name="extract.method.default.visibility" value="public" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -615,7 +607,7 @@
       <workItem from="1540191566928" duration="574000" />
       <workItem from="1540192357331" duration="268000" />
       <workItem from="1540313831495" duration="10144000" />
-      <workItem from="1540404529764" duration="11451000" />
+      <workItem from="1540404529764" duration="11510000" />
     </task>
     <servers />
   </component>
@@ -652,7 +644,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126445000" />
+    <option name="totallyTimeSpent" value="126504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="792" y="78" width="1128" height="872" extended-state="0" />
@@ -1204,8 +1196,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ru/ql/tt/tests/TestBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="33" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="270">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
