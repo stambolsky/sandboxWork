@@ -7,6 +7,7 @@ import static org.testng.Assert.assertTrue;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_CONTACTS_FIELD_EMAIL;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
+import static ru.ql.tt.tests.TestBase.app;
 
 public class ProfileContactsPage {
 
@@ -25,26 +26,32 @@ public class ProfileContactsPage {
     }
 
     public static void checkNotSaveFormContacts(String modalEditButtonCloseNotSave) {
-        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        clickWaitElement(BUTTON_EDIT_CONTACTS);
+        waitElement(MODAL_EDIT_EMAIL);
         wd.findElement(By.xpath(MODAL_EDIT_EMAIL)).clear();
         sendData(MODAL_EDIT_EMAIL, "test@test.test");
-        clickWaitElement(modalEditButtonCloseNotSave, 1000);
+        clickWaitElement(modalEditButtonCloseNotSave);
+        waitElement(PROFILE_CONTACTS_FIELD_EMAIL);
         String email = findGetText(PROFILE_CONTACTS_FIELD_EMAIL);
         assertFalse(email.equalsIgnoreCase("test@test.test"));
         wd.navigate().refresh();
-        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        clickWaitElement(BUTTON_EDIT_CONTACTS);
+        waitElement(MODAL_EDIT_EMAIL);
         assertTrue(wd.findElement(By.xpath(MODAL_EDIT_EMAIL)).getAttribute("value").equalsIgnoreCase(email));
-        clickWaitElement(MODAL_EDIT_BUTTON_CLOSE_NOT_SAVE, 2000);
+        clickWaitElement(MODAL_EDIT_BUTTON_CLOSE_NOT_SAVE);
+        waitCloseWindows(MODAL_WINDOW_EDIT_CONTACTS);
     }
 
     public static void changeContactsInfo(String phone, String skype) {
-        clickWaitElement(BUTTON_EDIT_CONTACTS, 500);
+        clickWaitElement(BUTTON_EDIT_CONTACTS);
+        waitElement(MODAL_WINDOW_EDIT_CONTACTS);
         assertTrue(wd.findElement(By.xpath(MODAL_WINDOW_EDIT_CONTACTS)).isDisplayed());
         Assert.assertEquals(findGetText(TITLE_MODAL_WINDOW_EDIT_CONTACTS),"Изменение контактной информации");
         wd.findElement(By.xpath(MODAL_EDIT_PHONE_FIELD)).clear();
         sendData(MODAL_EDIT_PHONE_FIELD, phone);
         wd.findElement(By.xpath(MODAL_EDIT_SKYPE_FIELD)).clear();
         sendData(MODAL_EDIT_SKYPE_FIELD, skype);
-        clickWaitElement(MODAL_EDIT_SAVE_BUTTON, 5000);
+        clickWaitElement(MODAL_EDIT_SAVE_BUTTON);
+        waitCloseWindows(MODAL_WINDOW_EDIT_CONTACTS);
     }
 }

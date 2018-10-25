@@ -1,6 +1,9 @@
 package ru.ql.tt.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -12,6 +15,7 @@ import static ru.ql.tt.PageBase.LoginPage.LINK_PROFILE;
 import static ru.ql.tt.PageBase.LoginPage.login;
 import static ru.ql.tt.appmanager.ApplicationManager.properties;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
+import static ru.ql.tt.tests.TestBase.app;
 
 public class UtilityMethods {
     private static String authProperties = "src/test/resources/authorization.properties";
@@ -55,33 +59,28 @@ public class UtilityMethods {
     }
 
     public static void goToProfile() {
+        waitElement(AVATARCOVER);
         wd.findElement(By.xpath(AVATARCOVER)).click();
+        waitElement(LINK_PROFILE);
         wd.findElement(By.xpath(LINK_PROFILE)).click();
     }
 
-    public static void clickWaitElement(String s, int i) {
+    public static void clickWaitElement(String s) {
+        waitElement(s);
         wd.findElement(By.xpath(s)).click();
-        try {
-            Thread.sleep(i);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public static void findClickElement(String s) {
+        waitElement(s);
         wd.findElement(By.xpath(s)).click();
     }
 
     public static void refreshPage() {
         wd.navigate().refresh();
-        try {
-            Thread.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
     }
 
     public static void sendData(String element, String text) {
+        waitElement(element);
         wd.findElement(By.xpath(element)).sendKeys(text);
     }
 
@@ -101,6 +100,16 @@ public class UtilityMethods {
 
     public static String getPageUrl() {
         return wd.getCurrentUrl();
+    }
+
+    public static void waitCloseWindows(String elementXpath) {
+        WebDriverWait wait = new WebDriverWait(wd, 100);
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXpath)));
+    }
+
+    public static void waitElement(String elementXpath) {
+        WebDriverWait wait = new WebDriverWait(wd, 100);
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(elementXpath))));
     }
 
     public static void stop() {

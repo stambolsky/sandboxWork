@@ -7,6 +7,7 @@ import org.testng.Assert;
 import static ru.ql.tt.PageBase.ProfilePage.*;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 import static ru.ql.tt.appmanager.UtilityMethods.*;
+import static ru.ql.tt.tests.TestBase.app;
 
 
 public class ProfileResumePage {
@@ -24,19 +25,22 @@ public class ProfileResumePage {
     }
 
     public static void checkNotSaveFormResume(String modalResumeEditIconCross) {
-        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 1000);
+        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT);
+        waitElement(MODAL_WINDOW_EDIT_TEXTAREA);
         wd.findElement(By.xpath(MODAL_WINDOW_EDIT_TEXTAREA)).clear();
         sendData(MODAL_WINDOW_EDIT_TEXTAREA, "Финансист");
         findClickElement(MODAL_WINDOW_EDIT_TIP_TEXTAREA);
-        clickWaitElement(modalResumeEditIconCross, 1000);
+        clickWaitElement(modalResumeEditIconCross);
+        waitCloseWindows(MODAL_WINDOW_EDIT_RESUME);
         String before = findGetText(PROFILE_RESUME_SHORT_RESUME);
-        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT, 1000);
+        clickWaitElement(PROFILE_RESUME_BUTTON_EDIT);
         String after = findGetText(MODAL_WINDOW_EDIT_TEXTAREA);
         if (after.equals("")) {
             after = "Краткое резюме не указано";
         }
         Assert.assertEquals(before, after);
-        clickWaitElement(modalResumeEditIconCross, 2000);
+        clickWaitElement(modalResumeEditIconCross);
+        waitCloseWindows(MODAL_WINDOW_EDIT_RESUME);
     }
 
     public static boolean UserPhotoAboveResume() {

@@ -7,9 +7,8 @@ import static org.testng.Assert.assertNotEquals;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_SCHEDULE_WORK_BUTTON_EDIT;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_TABLE_TIME_MONDAY;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
-import static ru.ql.tt.appmanager.UtilityMethods.clickWaitElement;
-import static ru.ql.tt.appmanager.UtilityMethods.findClickElement;
-import static ru.ql.tt.appmanager.UtilityMethods.findGetText;
+import static ru.ql.tt.appmanager.UtilityMethods.*;
+import static ru.ql.tt.tests.TestBase.app;
 
 public class ProfileSchedulePage {
 
@@ -28,22 +27,26 @@ public class ProfileSchedulePage {
     }
 
     public static void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) {
-        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
+        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
+        waitElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
         findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
         findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
         findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
         String beforeStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
         String beforeEnd = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK)).getAttribute("value");
         String beforeTime = beforeStart + " - " + beforeEnd;
-        clickWaitElement(modalWindowEditIconCross, 2000);
+        clickWaitElement(modalWindowEditIconCross);
+        waitElement(PROFILE_TABLE_TIME_MONDAY);
         String after = findGetText(PROFILE_TABLE_TIME_MONDAY);
         assertNotEquals(after, beforeTime);
         wd.navigate().refresh();
-        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT, 500);
+        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
+        waitElement(PROFILE_TABLE_TIME_MONDAY);
         String afterRefresh = after.substring(0,5);
         String afterStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
         Assert.assertEquals(afterStart, afterRefresh);
-        clickWaitElement(MODAL_WINDOW_EDIT_ICON_CROSS, 2000);
+        clickWaitElement(MODAL_WINDOW_EDIT_ICON_CROSS);
+        waitCloseWindows(MODAL_WINDOW_EDIT_SCHEDULE_WORK);
     }
 
     public static void changeTimeScheduleWork() {
