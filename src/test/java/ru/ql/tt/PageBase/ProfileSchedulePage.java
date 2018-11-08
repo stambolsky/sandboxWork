@@ -2,12 +2,12 @@ package ru.ql.tt.PageBase;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import ru.ql.tt.appmanager.UtilityMethods;
 
 import static org.testng.Assert.assertNotEquals;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_SCHEDULE_WORK_BUTTON_EDIT;
 import static ru.ql.tt.PageBase.ProfilePage.PROFILE_TABLE_TIME_MONDAY;
-import static ru.ql.tt.appmanager.ApplicationManager.wd;
-import static ru.ql.tt.appmanager.UtilityMethods.*;
+import static ru.ql.tt.tests.TestBase.app;
 
 public class ProfileSchedulePage {
 
@@ -21,40 +21,42 @@ public class ProfileSchedulePage {
     public static String MODAL_SCHEDULE_WORK_BUTTON_CLOSE_NOT_SAVE = "//div[@id='popup-edit-schedule']//button[contains(text(),'Закрыть без сохранения')]";
     public static String MODAL_WINDOW_EDIT_ICON_CROSS = "//div[@id='popup-edit-schedule']//div[@class='modal-header']//button";
 
+    private UtilityMethods utilityMethods = new UtilityMethods();
+
     public ProfileSchedulePage() {
         super();
     }
 
-    public static void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) {
-        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
-        waitElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
-        findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
-        String beforeStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
-        String beforeEnd = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK)).getAttribute("value");
+    public void checkNotSaveFormScheduleWork(String modalWindowEditIconCross) {
+        utilityMethods.waitAndClickElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
+        utilityMethods.waitElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
+        String beforeStart = app.wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
+        String beforeEnd = app.wd.findElement(By.xpath(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK)).getAttribute("value");
         String beforeTime = beforeStart + " - " + beforeEnd;
-        clickWaitElement(modalWindowEditIconCross);
-        waitElement(PROFILE_TABLE_TIME_MONDAY);
-        String after = findGetText(PROFILE_TABLE_TIME_MONDAY);
+        utilityMethods.waitAndClickElement(modalWindowEditIconCross);
+        utilityMethods.waitElement(PROFILE_TABLE_TIME_MONDAY);
+        String after = utilityMethods.getTextFromElement(PROFILE_TABLE_TIME_MONDAY);
         assertNotEquals(after, beforeTime);
-        wd.navigate().refresh();
-        clickWaitElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
-        waitElement(PROFILE_TABLE_TIME_MONDAY);
+        app.wd.navigate().refresh();
+        utilityMethods.waitAndClickElement(PROFILE_SCHEDULE_WORK_BUTTON_EDIT);
+        utilityMethods.waitElement(PROFILE_TABLE_TIME_MONDAY);
         String afterRefresh = after.substring(0,5);
-        String afterStart = wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
+        String afterStart = app.wd.findElement(By.xpath(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK)).getAttribute("value");
         Assert.assertEquals(afterStart, afterRefresh);
-        clickWaitElement(MODAL_WINDOW_EDIT_ICON_CROSS);
-        waitCloseWindows(MODAL_WINDOW_EDIT_SCHEDULE_WORK);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_ICON_CROSS);
+        utilityMethods.waitCloseWindows(MODAL_WINDOW_EDIT_SCHEDULE_WORK);
     }
 
-    public static void changeTimeScheduleWork() {
-        findClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
-        findClickElement(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
-        findClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
+    public void changeTimeScheduleWork() {
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_START_TIME_SCHEDULE_WORK);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_END_TIME_SCHEDULE_WORK);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_HOUR_UP);
+        utilityMethods.waitAndClickElement(MODAL_WINDOW_EDIT_TIME_MINUTE_UP);
     }
 }
 

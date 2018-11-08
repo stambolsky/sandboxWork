@@ -1,10 +1,13 @@
 package ru.ql.tt.PageBase;
 
 import org.openqa.selenium.By;
+import ru.ql.tt.appmanager.ApplicationManager;
+
 import java.util.Collection;
 import java.util.LinkedList;
 import java.util.List;
-import static ru.ql.tt.appmanager.ApplicationManager.wd;
+
+import static ru.ql.tt.tests.TestBase.app;
 
 public class ProfilePage {
 
@@ -34,25 +37,25 @@ public class ProfilePage {
     public static String WINDOW_RESUME_LAST_NAME = "//div[@class='fields']//div[3]/p[2]";
     public static String WINDOW_RESUME_PLACE = "//div[@class='fields']//div[4]";
 
-    public ProfilePage() {
+    /*public ProfilePage() {
         super();
-    }
+    }*/
 
-    public static boolean allElementsBlock() {
+    public boolean allElementsBlock() {
         String[] elements = new String[]{HEADER, LOGO, BLOCK_MENU, TITLE_PROFILE, BLOCK_RESUME, BLOCK_SCHEDULE_WORK
                 ,BLOCK_CONTACTS,BLOCK_DEVICES};
         return allElementInBlock(elements);
     }
 
-    private static boolean allElementInBlock(String[] elements) {
+    private boolean allElementInBlock(String[] elements) {
         return listElements(elements).size() == elements.length;
     }
 
-    private static Collection listElements(String[] elements) {
+    private Collection listElements(String[] elements) {
         List<String> listOfElements = new LinkedList<String>();
         for (String element : elements) {
             try {
-                if (wd.findElement(By.xpath(element)).isDisplayed()) {
+                if (app.wd.findElement(By.xpath(element)).isDisplayed()) {
                     listOfElements.add(element);
                 }
             } catch (Exception e) {

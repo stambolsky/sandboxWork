@@ -1,34 +1,40 @@
 package ru.ql.tt.appmanager;
 
+import com.sun.deploy.config.VerboseDefaultConfig;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.remote.BrowserType;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ru.ql.tt.PageBase.LoginPage;
+import ru.ql.tt.PageBase.ProfilePage;
+import ru.ql.tt.PageBase.ProfileResumePage;
+import ru.ql.tt.tests.TestBase;
+
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.NoSuchElementException;
+import java.util.Properties;
 import java.util.Set;
 import static ru.ql.tt.PageBase.LoginPage.AVATARCOVER;
 import static ru.ql.tt.PageBase.LoginPage.LINK_PROFILE;
-import static ru.ql.tt.PageBase.LoginPage.login;
-import static ru.ql.tt.appmanager.ApplicationManager.properties;
 import static ru.ql.tt.appmanager.ApplicationManager.wd;
 
 public class UtilityMethods {
-    private static String authProperties = "src/test/resources/authorization.properties";
-    private static String urlProperties = "src/test/resources/URL.properties";
+    public ProfilePage profilePage;
+    public ProfileResumePage profileResumePage;
+    private LoginPage loginPage = new LoginPage();
+    private String authProperties = "src/test/resources/authorization.properties";
+    private String urlProperties = "src/test/resources/URL.properties";
+    private Properties properties = new Properties();
 
-    public static void init() {
+    public void init() {
         open();
-        try {
-            properties.load(new FileReader(new File(authProperties)));
-        } catch (NoSuchElementException | IOException e) {
-            e.printStackTrace();
-        }
-        login(properties.getProperty("login"), properties.getProperty("password"));
+        loginPage.login(getLogin(), getPassword());
     }
 
-    private static void open() {
+    private void open() {
         try {
             properties.load(new FileReader(new File(urlProperties)));
         } catch (NoSuchElementException | IOException e) {
@@ -37,7 +43,7 @@ public class UtilityMethods {
         wd.get(properties.getProperty("LoginPage"));
     }
 
-    public static String getLogin() {
+    public String getLogin() {
         try {
             properties.load(new FileReader(new File(authProperties)));
         } catch (NoSuchElementException | IOException e) {
@@ -46,7 +52,16 @@ public class UtilityMethods {
         return properties.getProperty("login");
     }
 
-    public static String getUrlProfilePage() {
+    public String getPassword() {
+        try {
+            properties.load(new FileReader(new File(authProperties)));
+        } catch (NoSuchElementException | IOException e) {
+            e.printStackTrace();
+        }
+        return properties.getProperty("password");
+    }
+
+    public String getUrlProfilePage() {
         try {
             properties.load(new FileReader(new File(urlProperties)));
         } catch (NoSuchElementException | IOException e) {
@@ -55,37 +70,32 @@ public class UtilityMethods {
         return properties.getProperty("ProfilePage");
     }
 
-    public static void goToProfile() {
+    public void goToProfile() {
         waitElement(AVATARCOVER);
         wd.findElement(By.xpath(AVATARCOVER)).click();
         waitElement(LINK_PROFILE);
         wd.findElement(By.xpath(LINK_PROFILE)).click();
     }
 
-    public static void clickWaitElement(String s) {
-        waitElement(s);
-        wd.findElement(By.xpath(s)).click();
+    public void waitAndClickElement(String elementXpath) {
+        waitElement(elementXpath);
+        wd.findElement(By.xpath(elementXpath)).click();
     }
 
-    public static void findClickElement(String s) {
-        waitElement(s);
-        wd.findElement(By.xpath(s)).click();
-    }
-
-    public static void refreshPage() {
+    public void refreshPage() {
         wd.navigate().refresh();
     }
 
-    public static void sendData(String element, String text) {
+    public void writeTextInField(String element, String text) {
         waitElement(element);
         wd.findElement(By.xpath(element)).sendKeys(text);
     }
 
-    public static String findGetText(String s) {
+    public String getTextFromElement(String s) {
         return wd.findElement(By.xpath(s)).getText();
     }
 
-    public static void switchWindow(String idWindow) {
+    public void switchWindow(String idWindow) {
         Set<String> idOpeningWindows = wd.getWindowHandles();
         for (String tab : idOpeningWindows) {
             if (!tab.equals(idWindow)) {
@@ -95,21 +105,21 @@ public class UtilityMethods {
         }
     }
 
-    public static String getPageUrl() {
+    public String getPageUrl() {
         return wd.getCurrentUrl();
     }
 
-    public static void waitCloseWindows(String elementXpath) {
+    public void waitCloseWindows(String elementXpath) {
         WebDriverWait wait = new WebDriverWait(wd, 100);
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath(elementXpath)));
     }
 
-    public static void waitElement(String elementXpath) {
+    public void waitElement(String elementXpath) {
         WebDriverWait wait = new WebDriverWait(wd, 100);
         wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.xpath(elementXpath))));
     }
 
-    public static void stop() {
+    public void stopBrowser() {
         wd.quit();
     }
 }

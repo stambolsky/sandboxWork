@@ -11,12 +11,10 @@ import static java.util.concurrent.TimeUnit.SECONDS;
 public class ApplicationManager {
     public static WebDriver wd;
     private String browser;
-    static Properties properties;
-
 
     public ApplicationManager(String browser) {
         this.browser = browser;
-        properties = new Properties();
+        Properties properties = new Properties();
     }
 
     public void createBrowser() {
